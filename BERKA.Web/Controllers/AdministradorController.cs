@@ -48,7 +48,7 @@ namespace BERKA.Web.Controllers
             ViewBag.Revisiones = revisiones;
             ViewBag.Vehiculos = vehiculos;
 
-            return View();
+            return View("Index");
         }
 
         [HttpPost]
