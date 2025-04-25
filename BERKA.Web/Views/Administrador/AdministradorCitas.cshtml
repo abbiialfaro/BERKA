@@ -1,0 +1,138 @@
+﻿@model BERKA.Web.Models.CitaViewModel
+
+@{
+    ViewData["Title"] = "Administrador de Citas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var vehiculos = ViewBag.Vehiculos as List<BERKA.Models.Vehiculo> ?? new List<BERKA.Models.Vehiculo>();
+    var citas = ViewBag.Citas as List<BERKA.Models.Cita> ?? new List<BERKA.Models.Cita>();
+    var revisiones = ViewBag.Revisiones as List<BERKA.Models.Revision> ?? new List<BERKA.Models.Revision>();
+    var clientes = ViewBag.Clientes as List<BERKA.Models.Cliente> ?? new List<BERKA.Models.Cliente>();
+}
+
+<h1 class="text-success">📆 @ViewData["Title"]</h1>
+<hr />
+
+<style>
+    .collapsible {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15pt;
+        margin-bottom: 10px;
+    }
+
+        .active, .collapsible:hover {
+            background-color: #ccc;
+        }
+
+    .content {
+        display: none;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+    }
+</style>
+
+<!-- Registrar Cita -->
+<button type="button" class="collapsible">Registrar Cita</button>
+<div class="content">
+    <form asp-action="RegistrarCita" method="post">
+        <!-- Cliente -->
+        <div class="form-group mb-3">
+            <label for="ID_Cliente">Cliente:</label>
+            <select name="ID_Cliente" class="form-control" required>
+                <option value="">-- Seleccione --</option>
+                @foreach (var c in clientes)
+                {
+                    <option value="@c.ID_Cliente">@c.Nombre @c.Apellido</option>
+                }
+            </select>
+        </div>
+
+        <!-- Fecha -->
+        <div class="form-group mb-3">
+            <label for="Fecha">Fecha:</label>
+            <input name="Fecha" type="date" class="form-control" required />
+        </div>
+
+        <!-- Hora -->
+        <div class="form-group mb-3">
+            <label for="Hora">Hora:</label>
+            <input name="Hora" type="time" class="form-control" required />
+        </div>
+
+        <!-- Estado -->
+        <div class="form-group mb-3">
+            <label for="Estado">Estado:</label>
+            <select name="Estado" class="form-control" required>
+                <option value="">-- Seleccione --</option>
+                <option value="Pendiente">Pendiente</option>
+                <option value="Activo">Activo</option>
+                <option value="Cancelado">Cancelado</option>
+            </select>
+        </div>
+
+        <!-- Placa -->
+        <div class="form-group mb-3">
+            <label for="Placa">Placa del Vehículo:</label>
+            <input type="text" name="Placa" class="form-control" required/>
+        </div>
+
+        <!-- Categoría -->
+        <div class="form-group mb-3">
+            <label for="Categoria">Categoría:</label>
+            <select name="Categoria" class="form-control" required>
+                <option value="">-- Seleccione --</option>
+                <option value="Liviano">Liviano</option>
+                <option value="Pesado">Pesado</option>
+                <option value="Motocicleta">Motocicleta</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-success">Registrar</button>
+    </form>
+</div>
+
+<!-- Placeholder para otras acciones -->
+<button type="button" class="collapsible">Actualizar Cita</button>
+<div class="content">
+    <p>Funcionalidad pendiente de implementar.</p>
+</div>
+
+<button type="button" class="collapsible">Eliminar Cita</button>
+<div class="content">
+    <p>Funcionalidad pendiente de implementar.</p>
+</div>
+
+<button type="button" class="collapsible">Consultar Cita</button>
+<div class="content">
+    <p>Funcionalidad pendiente de implementar.</p>
+</div>
+
+<div class="show-results">
+    <!-- Resultados o alertas irán aquí -->
+</div>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>

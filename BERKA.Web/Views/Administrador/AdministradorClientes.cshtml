@@ -1,0 +1,125 @@
+﻿@model BERKA.Web.Models.CitaViewModel
+
+@{
+    ViewData["Title"] = "Administrador de Clientes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-success">👤 @ViewData["Title"]</h1>
+<hr />
+
+<style>
+    .collapsible {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15pt;
+        margin-bottom: 10px;
+    }
+
+        .active, .collapsible:hover {
+            background-color: #ccc;
+        }
+
+    .content {
+        display: none;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+    }
+</style>
+
+<!-- Registrar Cita -->
+<button type="button" class="collapsible">Registrar Cliente</button>
+<div class="content">
+    <form asp-action="RegistrarCliente" method="post">
+        <div class="form-group mb-3">
+            <label for="tipo_Documento">Tipo de Documento:</label>
+            <input asp-for="tipo_Documento" class="form-control" required />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="nombre">Nombre:</label>
+            <input asp-for="nombre" class="form-control" required />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="apellido">Apellido:</label>
+            <input asp-for="apellido" class="form-control" required />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="correo">Correo:</label>
+            <input asp-for="correo" type="email" class="form-control" required />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="telefono">Teléfono:</label>
+            <input asp-for="telefono" type="tel" class="form-control" required />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="direccion">Dirección:</label>
+            <textarea asp-for="direccion" class="form-control" rows="2" required></textarea>
+        </div>
+
+        <div class="form-group mb-4">
+            <label for="categoria">Categoría:</label>
+            <select asp-for="categoria" class="form-control" required>
+                <option value="">-- Seleccione --</option>
+                <option value="activo">Activo</option>
+                <option value="inactivo">Inactivo</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-success">Registrar Cliente</button>
+    </form>
+
+    @if (ViewBag.Mensaje != null)
+    {
+        <div class="alert alert-info mt-4">@ViewBag.Mensaje</div>
+    }
+</div>
+
+<!-- Placeholder para otras acciones -->
+<button type="button" class="collapsible">Actualizar Cita</button>
+<div class="content">
+    <p>Funcionalidad pendiente de implementar.</p>
+</div>
+
+<button type="button" class="collapsible">Eliminar Cita</button>
+<div class="content">
+    <p>Funcionalidad pendiente de implementar.</p>
+</div>
+
+<button type="button" class="collapsible">Consultar Cita</button>
+<div class="content">
+    <p>Funcionalidad pendiente de implementar.</p>
+</div>
+
+<div class="show-results">
+    <!-- Resultados o alertas irán aquí -->
+</div>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>

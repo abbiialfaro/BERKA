@@ -89,14 +89,14 @@ C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA.Web\obj\Debug\net8.0\
 C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA.Web\obj\Debug\net8.0\BERKA.Web.pdb
 C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA.Web\obj\Debug\net8.0\BERKA.Web.genruntimeconfig.cache
 C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA.Web\obj\Debug\net8.0\ref\BERKA.Web.dll
-C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\BERKA.staticwebassets.endpoints.json
-C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\BERKA.Web.staticwebassets.endpoints.json
 C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\BERKA.deps.json
 C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\BERKA.runtimeconfig.json
+C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\BERKA.staticwebassets.endpoints.json
 C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\BERKA.exe
+C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\appsettings.json
 C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\BERKA.Web.staticwebassets.runtime.json
+C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\BERKA.Web.staticwebassets.endpoints.json
 C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\BERKA.Web.exe
 C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\BERKA.Web.deps.json
 C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\BERKA.Web.runtimeconfig.json

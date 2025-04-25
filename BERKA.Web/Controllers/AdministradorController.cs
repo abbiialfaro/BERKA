@@ -71,6 +71,43 @@ namespace BERKA.Web.Controllers
             await _httpClient.DeleteAsync($"{_apiBaseUrl}/api/cita/{id}");
             return RedirectToAction("Dashboard");
         }
+
+        // Vistas de los paneles de Administracion
+        public IActionResult Clientes()
+        {
+            return View("AdministradorClientes");
+        }
+
+        public IActionResult Citas()
+        {
+            ViewBag.Clientes = _context.Clientes.ToList();
+            ViewBag.Vehiculos = _context.Vehiculos.ToList();
+            ViewBag.Citas = _context.Citas.Include(c => c.Cliente).Include(c => c.Vehiculo).ToList();
+            ViewBag.Revisiones = _context.Revisiones.ToList();
+
+            return View("AdministradorCitas");
+        }
+
+        public IActionResult Combustibles()
+        {
+            return View("AdministradorCombustibles");
+        }
+
+        public IActionResult Estaciones()
+        {
+            return View("AdministradorEstaciones");
+        }
+
+        public IActionResult Revisiones()
+        {
+            return View("AdministradorRevisiones");
+        }
+
+        public IActionResult Vehiculos()
+        {
+            return View("AdministradorVehiculos");
+        }
     }
 }
+
 

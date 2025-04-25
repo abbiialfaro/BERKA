@@ -8,8 +8,37 @@
     var clientes = ViewBag.Clientes as List<BERKA.Models.Cliente>;
 }
 
-<div class="container mt-4">
-    <h2 class="text-success mb-4">Panel de Administrador</h2>
+<div class="container-fluid mt-4">
+    <h1 class="text-success mb-4">Panel de Administrador</h1>
+    <div class="row">
+        <div class="col-md-3 col-lg-2">
+            <!-- Ajusta el ancho con col-md-* o col-lg-* -->
+            <div class="list-group">
+                <span class="list-group-item list-group-item-success"><strong>Administrar:</strong></span>
+                <a href="@Url.Action("Clientes", "Administrador")" class="list-group-item list-group-item-action">
+                    Clientes
+                </a>
+                <a href="@Url.Action("Citas", "Administrador")" class="list-group-item list-group-item-action">
+                    Citas
+                </a>
+                <a href="@Url.Action("Combustibles", "Administrador")" class="list-group-item list-group-item-action">
+                    Combustibles
+                </a>
+                <a href="@Url.Action("Estaciones", "Administrador")" class="list-group-item list-group-item-action">
+                    Estaciones
+                </a>
+                <a href="@Url.Action("Revisiones", "Administrador")" class="list-group-item list-group-item-action">
+                    Revisiones
+                </a>
+                <a href="@Url.Action("Vehiculos", "Administrador")" class="list-group-item list-group-item-action">
+                    Vehículos
+                </a>
+
+                <!-- Puedes agregar más opciones aquí -->
+            </div>
+        </div>
+
+        <div class="col-md-9 col-lg-10">
 
     <h4 class="text-secondary">Vehículos Registrados</h4>
     <table class="table table-bordered table-striped">

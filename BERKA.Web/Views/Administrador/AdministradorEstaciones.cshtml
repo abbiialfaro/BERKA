@@ -1,0 +1,132 @@
+﻿@* @model BERKA.Web.Models.EstacionViewModel *@
+@{
+    ViewData["Title"] = "Administrador de Estaciones";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-success">🏭 @ViewData["Title"]</h1>
+<hr />
+
+<style>
+    .collapsible {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15pt;
+        margin-bottom: 10px;
+    }
+
+        .active, .collapsible:hover {
+            background-color: #ccc;
+        }
+
+    .content {
+        display: none;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+    }
+</style>
+
+<!-- Registrar Estación -->
+<button type="button" class="collapsible">Registrar Estación</button>
+<div class="content">
+    <form asp-action="RegistrarEstacion" method="post">
+        <div class="form-group mb-3">
+            <label asp-for="Nombre" class="form-label">Nombre de la Estación:</label>
+            <input asp-for="Nombre" class="form-control" required />
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="Direccion" class="form-label">Dirección:</label>
+            <input asp-for="Direccion" class="form-control" required />
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="Telefono" class="form-label">Teléfono:</label>
+            <input asp-for="Telefono" type="tel" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-success">Registrar Estación</button>
+    </form>
+
+    @if (ViewBag.Mensaje != null)
+    {
+        <div class="alert alert-info mt-4">@ViewBag.Mensaje</div>
+    }
+</div>
+
+<!-- Actualizar Estación -->
+<button type="button" class="collapsible">Actualizar Estación</button>
+<div class="content">
+    <form asp-action="ActualizarEstacion" method="post">
+        <div class="form-group mb-3">
+            <label asp-for="ID_Estacion" class="form-label">ID:</label>
+            <input asp-for="ID_Estacion" class="form-control" readonly />
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="Nombre" class="form-label">Nuevo Nombre:</label>
+            <input asp-for="Nombre" class="form-control" required />
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="Direccion" class="form-label">Nueva Dirección:</label>
+            <input asp-for="Direccion" class="form-control" required />
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="Telefono" class="form-label">Nuevo Teléfono:</label>
+            <input asp-for="Telefono" type="tel" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Actualizar Estación</button>
+    </form>
+</div>
+
+<!-- Eliminar Estación -->
+<button type="button" class="collapsible">Eliminar Estación</button>
+<div class="content">
+    <form asp-action="EliminarEstacion" method="post">
+        <div class="form-group mb-3">
+            <label for="idEliminar" class="form-label">ID de Estación a Eliminar:</label>
+            <input id="idEliminar" name="ID_Estacion" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-danger">Eliminar Estación</button>
+    </form>
+</div>
+
+<!-- Consultar Estación -->
+<button type="button" class="collapsible">Consultar Estación</button>
+<div class="content">
+    <form asp-action="ConsultarEstacion" method="get" class="mb-4">
+        <div class="form-group mb-3">
+            <label for="idConsultar" class="form-label">ID de Estación:</label>
+            <input id="idConsultar" name="id" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-info">Consultar</button>
+    </form>
+
+    @if (Model != null && Model.ID_Estacion > 0)
+    {
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Detalles de Estación #@Model.ID_Estacion</h5>
+                <p><strong>Nombre:</strong> @Model.Nombre</p>
+                <p><strong>Dirección:</strong> @Model.Direccion</p>
+                <p><strong>Teléfono:</strong> @Model.Telefono</p>
+            </div>
+        </div>
+    }
+</div>
+
+<script>
+    document.querySelectorAll(".collapsible").forEach(btn => {
+        btn.addEventListener("click", () => {
+            btn.classList.toggle("active");
+            const content = btn.nextElementSibling;
+            content.style.display = content.style.display === "block" ? "none" : "block";
+        });
+    });
+</script>

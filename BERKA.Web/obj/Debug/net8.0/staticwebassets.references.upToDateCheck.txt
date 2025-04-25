@@ -76,3 +76,7 @@ C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.build.j
 C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.build.json
