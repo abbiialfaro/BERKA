@@ -1,5 +1,5 @@
 ﻿@model List<BERKA.Models.Cliente>
-
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     ViewData["Title"] = "Administrar Clientes";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -41,14 +41,22 @@
                     <td>@cliente.Telefono</td>
                     <td>@cliente.Categoria</td>
                     <td class="text-center">
-                        <a asp-action="EditarCliente" asp-controller="Cliente" asp-route-id="@cliente.ID_Cliente" class="btn btn-warning btn-sm">
+                        <a href="@Url.Action("EditarCliente", "Cliente", new { id = cliente.ID_Cliente })"
+                           class="btn btn-warning btn-sm">
                             ✏️ Editar
                         </a>
 
-                        <form asp-action="EliminarCliente" asp-controller="Cliente" method="post" style="display:inline;" asp-route-id="@cliente.ID_Cliente">
-                            <button type="submit" class="btn btn-danger btn-sm"
-                                    onclick="return confirm('¿Deseas eliminar este cliente?')">
-                                🗑️ Eliminar
+
+                        <form asp-controller="Cliente"
+                              asp-action="EliminarCliente"
+                              asp-route-id="@cliente.ID_Cliente"
+                              method="post"
+                              class="d-inline p-0 m-0 bg-transparent border-0">
+                            @Html.AntiForgeryToken()
+                            <button type="submit"
+                                    class="btn btn-sm btn-danger"
+                                    onclick="return confirm('¿Deseas eliminar este cliente?');">
+                                <i class="bi bi-trash"></i>
                             </button>
                         </form>
                     </td>

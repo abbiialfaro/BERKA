@@ -6,6 +6,8 @@ namespace BERKA.Share.ViewModels
 {
     public class ClienteViewModel
     {
+        public int ID_Cliente { get; set; }
+
         [Required]
         public string TipoDocumento { get; set; }
 

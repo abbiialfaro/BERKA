@@ -193,7 +193,7 @@
   },
   {
     "ContainingType": "BERKA.Controllers.ClienteController",
-    "Method": "PutCliente",
+    "Method": "Put",
     "RelativePath": "api/Cliente/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -205,8 +205,8 @@
         "IsRequired": true
       },
       {
-        "Name": "cliente",
-        "Type": "BERKA.Models.Cliente",
+        "Name": "model",
+        "Type": "BERKA.Share.ViewModels.ClienteViewModel",
         "IsRequired": true
       }
     ],

@@ -74,35 +74,32 @@ namespace BERKA.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCliente(int id, Cliente cliente)
+        public async Task<IActionResult> Put(int id, [FromBody] ClienteViewModel model)
         {
-            if (id != cliente.ID_Cliente)
+            if (!ModelState.IsValid)
             {
-                return BadRequest();
+                // Opcional: log de errores
+                foreach (var e in ModelState.Values.SelectMany(v => v.Errors))
+                    Console.WriteLine("Error de validación: " + e.ErrorMessage);
+                return BadRequest(ModelState);
             }
 
-            _context.Entry(cliente).State = EntityState.Modified;
+            // Busca la entidad existente
+            var cliente = await _context.Clientes.FindAsync(id);
+            if (cliente == null)
+                return NotFound();
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!_context.Clientes.Any(e => e.ID_Cliente == id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            // Mapea los campos del ViewModel a la entidad
+            cliente.Tipo_Documento = model.TipoDocumento;
+            cliente.Nombre = model.Nombre;
+            cliente.Apellido = model.Apellido;
+            cliente.Correo = model.Correo;
+            cliente.Telefono = model.Telefono;
+            cliente.Direccion = model.Direccion;
+            cliente.Categoria = model.Categoria;
 
-            return NoContent();
+            await _context.SaveChangesAsync();
+            return NoContent();  // 204
         }
-
     }
-
-
 }

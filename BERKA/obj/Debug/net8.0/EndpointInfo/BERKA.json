@@ -354,17 +354,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Cliente"
+                "$ref": "#/components/schemas/ClienteViewModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Cliente"
+                "$ref": "#/components/schemas/ClienteViewModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Cliente"
+                "$ref": "#/components/schemas/ClienteViewModel"
               }
             }
           }
@@ -2367,6 +2367,10 @@
         ],
         "type": "object",
         "properties": {
+          "iD_Cliente": {
+            "type": "integer",
+            "format": "int32"
+          },
           "tipoDocumento": {
             "minLength": 1,
             "type": "string"
