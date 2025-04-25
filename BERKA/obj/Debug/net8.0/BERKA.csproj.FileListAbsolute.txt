@@ -1,0 +1,738 @@
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\appsettings.Development.json
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\appsettings.json
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\BERKA.staticwebassets.endpoints.json
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\BERKA.exe
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\BERKA.deps.json
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\BERKA.runtimeconfig.json
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\BERKA.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\BERKA.pdb
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Azure.Core.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Azure.Identity.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Humanizer.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\System.ClientModel.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\System.CodeDom.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\System.Memory.Data.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\clase\servicios\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\BERKA.csproj.AssemblyReference.cache
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\BERKA.GeneratedMSBuildEditorConfig.editorconfig
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\BERKA.AssemblyInfoInputs.cache
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\BERKA.AssemblyInfo.cs
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\BERKA.csproj.CoreCompileInputs.cache
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\BERKA.MvcApplicationPartsAssemblyInfo.cs
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\BERKA.MvcApplicationPartsAssemblyInfo.cache
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\scopedcss\bundle\BERKA.styles.css
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.build.json
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.development.json
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.BERKA.Microsoft.AspNetCore.StaticWebAssets.props
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.BERKA.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.build.BERKA.props
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BERKA.props
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BERKA.props
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.pack.json
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\BERKA.csproj.Up2Date
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\BERKA.dll
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\refint\BERKA.dll
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\BERKA.pdb
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\BERKA.genruntimeconfig.cache
+C:\clase\servicios\BERKA\BERKA\obj\Debug\net8.0\ref\BERKA.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\BERKA.staticwebassets.endpoints.json
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\appsettings.json
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\BERKA.exe
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\BERKA.deps.json
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\BERKA.runtimeconfig.json
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\BERKA.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\BERKA.pdb
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Humanizer.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\BERKA.csproj.AssemblyReference.cache
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\BERKA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\BERKA.AssemblyInfoInputs.cache
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\BERKA.AssemblyInfo.cs
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\BERKA.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\BERKA.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\BERKA.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\scopedcss\bundle\BERKA.styles.css
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.BERKA.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.BERKA.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.build.BERKA.props
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BERKA.props
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BERKA.props
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\BERKA.csproj.Up2Date
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\BERKA.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\refint\BERKA.dll
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\BERKA.pdb
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\BERKA.genruntimeconfig.cache
+C:\Users\gabri\Downloads\BERKA\BERKA\obj\Debug\net8.0\ref\BERKA.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\appsettings.json
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\BERKA.staticwebassets.endpoints.json
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\BERKA.exe
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\BERKA.deps.json
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\BERKA.runtimeconfig.json
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\BERKA.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\BERKA.pdb
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Humanizer.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\BERKA.csproj.AssemblyReference.cache
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\BERKA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\BERKA.AssemblyInfoInputs.cache
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\BERKA.AssemblyInfo.cs
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\BERKA.csproj.CoreCompileInputs.cache
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\BERKA.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\BERKA.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\scopedcss\bundle\BERKA.styles.css
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.BERKA.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.BERKA.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.build.BERKA.props
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BERKA.props
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BERKA.props
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\BERKA.csproj.Up2Date
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\BERKA.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\refint\BERKA.dll
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\BERKA.pdb
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\BERKA.genruntimeconfig.cache
+C:\Users\chrst\source\repos\BERKA (2)\BERKA\BERKA\obj\Debug\net8.0\ref\BERKA.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\appsettings.json
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\BERKA.staticwebassets.endpoints.json
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\BERKA.exe
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\BERKA.deps.json
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\BERKA.runtimeconfig.json
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\BERKA.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\BERKA.pdb
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Humanizer.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\BERKA.csproj.AssemblyReference.cache
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\BERKA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\BERKA.AssemblyInfoInputs.cache
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\BERKA.AssemblyInfo.cs
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\BERKA.csproj.CoreCompileInputs.cache
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\BERKA.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\BERKA.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\scopedcss\bundle\BERKA.styles.css
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.BERKA.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.BERKA.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.build.BERKA.props
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BERKA.props
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BERKA.props
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\BERKA.csproj.Up2Date
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\BERKA.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\refint\BERKA.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\BERKA.pdb
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\BERKA.genruntimeconfig.cache
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\ref\BERKA.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\BERKA.csproj.AssemblyReference.cache
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\BERKA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\BERKA.AssemblyInfoInputs.cache
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\BERKA.AssemblyInfo.cs
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\BERKA.csproj.CoreCompileInputs.cache
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\BERKA.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\BERKA.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\BERKA.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\refint\BERKA.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\BERKA.pdb
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\BERKA.staticwebassets.endpoints.json
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\appsettings.json
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\BERKA.exe
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\BERKA.deps.json
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\BERKA.runtimeconfig.json
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\BERKA.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\BERKA.pdb
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Humanizer.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\scopedcss\bundle\BERKA.styles.css
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.BERKA.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.BERKA.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.build.BERKA.props
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BERKA.props
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BERKA.props
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\BERKA.csproj.Up2Date
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\BERKA.genruntimeconfig.cache
+C:\Users\chrst\OneDrive\Escritorio\BEKRA\BERKA\BERKA\BERKA\obj\Debug\net8.0\ref\BERKA.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\bin\Debug\net8.0\Newtonsoft.Json.dll

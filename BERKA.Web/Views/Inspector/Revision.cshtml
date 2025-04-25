@@ -1,0 +1,65 @@
+﻿@model BERKA.Web.Models.RevisionViewModel
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Error
+    </div>
+}
+@if (TempData["Mensaje"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["Mensaje"]
+    </div>
+}
+
+@{
+    ViewData["Title"] = "Revisión del Vehículo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-success mb-4">Revisión Técnica</h2>
+
+<form asp-action="RegistrarRevision" method="post">
+    <!-- ID de la Cita -->
+    <div class="mb-3">
+        <label class="form-label fw-bold text-success">ID de la Cita</label>
+        <input class="form-control" asp-for="ID_Cita" type="number" required />
+    </div>
+
+    <!-- Placa del Vehículo -->
+    <div class="mb-3">
+        <label class="form-label fw-bold text-success">Placa del Vehículo</label>
+        <input class="form-control" asp-for="Placa" required />
+    </div>
+
+    <!-- Secciones de Revisión -->
+    @foreach (var seccion in new[] {
+    ("1. Luces", "Luces"),
+    ("2. Suspensión", "Suspension"),
+    ("3. Frenos", "Frenos"),
+    ("4. Neumáticos y Carrocería", "Carroceria"),
+    ("5. Emisión de Gases", "Gases")
+    })
+    {
+        <div class="mb-3 p-3 bg-success bg-opacity-75 text-white rounded shadow-sm">
+            <h5 class="fw-bold">@seccion.Item1</h5>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="@seccion.Item2" value="Aprobado" required />
+                <label class="form-check-label">Aprobado</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="@seccion.Item2" value="Reprobado" />
+                <label class="form-check-label">Reprobado</label>
+            </div>
+        </div>
+    }
+
+    <!-- Observaciones -->
+    <div class="mb-3">
+        <label class="form-label fw-bold text-success">Observaciones</label>
+        <textarea class="form-control" asp-for="Observaciones" rows="3"></textarea>
+    </div>
+
+    <!-- Botón -->
+    <button type="submit" class="btn btn-success">Registrar Revisión</button>
+</form>

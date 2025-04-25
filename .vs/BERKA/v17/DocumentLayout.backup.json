@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gabpc\\source\\repos\\BERKA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C19DB798-2C2A-4CE1-AB12-FD5B2B8DC100}|BERKA.Web\\BERKA.Web.csproj|c:\\users\\gabpc\\source\\repos\\berka\\berka.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C19DB798-2C2A-4CE1-AB12-FD5B2B8DC100}|BERKA.Web\\BERKA.Web.csproj|solutionrelative:berka.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C19DB798-2C2A-4CE1-AB12-FD5B2B8DC100}|BERKA.Web\\BERKA.Web.csproj|c:\\users\\gabpc\\source\\repos\\berka\\berka.web\\controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C19DB798-2C2A-4CE1-AB12-FD5B2B8DC100}|BERKA.Web\\BERKA.Web.csproj|solutionrelative:berka.web\\controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C19DB798-2C2A-4CE1-AB12-FD5B2B8DC100}|BERKA.Web\\BERKA.Web.csproj|c:\\users\\gabpc\\source\\repos\\berka\\berka.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C19DB798-2C2A-4CE1-AB12-FD5B2B8DC100}|BERKA.Web\\BERKA.Web.csproj|solutionrelative:berka.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C19DB798-2C2A-4CE1-AB12-FD5B2B8DC100}|BERKA.Web\\BERKA.Web.csproj|c:\\users\\gabpc\\source\\repos\\berka\\berka.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C19DB798-2C2A-4CE1-AB12-FD5B2B8DC100}|BERKA.Web\\BERKA.Web.csproj|solutionrelative:berka.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E4B43B-1F9B-4FC3-9BC1-F68711F11DD9}|BERKA\\BERKA.csproj|c:\\users\\gabpc\\source\\repos\\berka\\berka\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{69E4B43B-1F9B-4FC3-9BC1-F68711F11DD9}|BERKA\\BERKA.csproj|solutionrelative:berka\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C19DB798-2C2A-4CE1-AB12-FD5B2B8DC100}|BERKA.Web\\BERKA.Web.csproj|c:\\users\\gabpc\\source\\repos\\berka\\berka.web\\views\\administrador\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C19DB798-2C2A-4CE1-AB12-FD5B2B8DC100}|BERKA.Web\\BERKA.Web.csproj|solutionrelative:berka.web\\views\\administrador\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69E4B43B-1F9B-4FC3-9BC1-F68711F11DD9}|BERKA\\BERKA.csproj|c:\\users\\gabpc\\source\\repos\\berka\\berka\\models\\berkacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69E4B43B-1F9B-4FC3-9BC1-F68711F11DD9}|BERKA\\BERKA.csproj|solutionrelative:berka\\models\\berkacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BERKA.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BERKA.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T23:56:50.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA.Web\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "BERKA.Web\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA.Web\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "BERKA.Web\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T23:46:20.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "BERKA.Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA.Web\\appsettings.json",
+              "RelativeToolTip": "BERKA.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-24T23:42:58.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA\\appsettings.json",
+              "RelativeDocumentMoniker": "BERKA\\appsettings.json",
+              "ToolTip": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA\\appsettings.json",
+              "RelativeToolTip": "BERKA\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-24T23:42:50.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdministradorController.cs",
+              "DocumentMoniker": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA.Web\\Controllers\\AdministradorController.cs",
+              "RelativeDocumentMoniker": "BERKA.Web\\Controllers\\AdministradorController.cs",
+              "ToolTip": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA.Web\\Controllers\\AdministradorController.cs",
+              "RelativeToolTip": "BERKA.Web\\Controllers\\AdministradorController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T20:38:46.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA.Web\\Views\\Administrador\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "BERKA.Web\\Views\\Administrador\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA.Web\\Views\\Administrador\\Dashboard.cshtml",
+              "RelativeToolTip": "BERKA.Web\\Views\\Administrador\\Dashboard.cshtml",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAAAMoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T17:53:28.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BERKAcontext.cs",
+              "DocumentMoniker": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA\\Models\\BERKAcontext.cs",
+              "RelativeDocumentMoniker": "BERKA\\Models\\BERKAcontext.cs",
+              "ToolTip": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA\\Models\\BERKAcontext.cs",
+              "RelativeToolTip": "BERKA\\Models\\BERKAcontext.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvyoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T17:01:29.158Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

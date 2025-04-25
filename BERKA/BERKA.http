@@ -1,0 +1,6 @@
+@BERKA_HostAddress = https://localhost:5130
+
+GET {{BERKA_HostAddress}}/weatherforecast/
+Accept: application/json
+
+
