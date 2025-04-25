@@ -8,7 +8,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("mypolicy", policy =>
     {
-        policy.WithOrigins("https://localhost:5130") // <-- frontend MVC
+        policy.WithOrigins("http://localhost:5004") // <-- frontend MVC
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
@@ -32,7 +32,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.UseRouting();
 app.UseAuthorization();
 

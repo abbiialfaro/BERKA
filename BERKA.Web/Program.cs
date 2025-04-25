@@ -14,7 +14,7 @@ builder.Services.AddDbContext<BERKAcontext>(options =>
 // Conexion Frontend con Backend
 builder.Services.AddHttpClient("ApiCliente", client =>
 {
-    client.BaseAddress = new Uri("https://localhost:5129/api/");
+    client.BaseAddress = new Uri("http://localhost:5129/api/");
 });
 
 

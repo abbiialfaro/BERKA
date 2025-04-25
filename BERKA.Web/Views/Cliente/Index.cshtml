@@ -1,0 +1,58 @@
+﻿@model List<BERKA.Models.Cliente>
+
+@{
+    ViewData["Title"] = "Administrar Clientes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <h1 class="text-success">👥 Administrar Clientes</h1>
+
+    <div class="d-flex justify-content-end mb-3">
+        <a asp-action="RegistrarCliente" class="btn btn-success">
+            ➕ Registrar Nuevo Cliente
+        </a>
+    </div>
+
+    @if (TempData["mensaje"] != null)
+    {
+        <div class="alert alert-success">@TempData["mensaje"]</div>
+    }
+
+    <table class="table table-bordered table-striped">
+        <thead class="table-success">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Correo</th>
+                <th>Teléfono</th>
+                <th>Categoría</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cliente in Model)
+            {
+                <tr>
+                    <td>@cliente.Nombre</td>
+                    <td>@cliente.Apellido</td>
+                    <td>@cliente.Correo</td>
+                    <td>@cliente.Telefono</td>
+                    <td>@cliente.Categoria</td>
+                    <td class="text-center">
+                        <a asp-action="EditarCliente" asp-route-id="@cliente.ID_Cliente" class="btn btn-warning btn-sm">
+                            ✏️ Editar
+                        </a>
+
+                        <form asp-action="EliminarCliente" method="post" style="display:inline;" asp-route-id="@cliente.ID_Cliente">
+                            <button type="submit" class="btn btn-danger btn-sm"
+                                    onclick="return confirm('¿Deseas eliminar este cliente?')">
+                                🗑️ Eliminar
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

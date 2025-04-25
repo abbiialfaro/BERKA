@@ -4,11 +4,13 @@
     "Projects": [
       {
         "Path": "BERKA\\BERKA.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": "http"
       },
       {
         "Path": "BERKA.Web\\BERKA.Web.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": "http"
       }
     ]
   }

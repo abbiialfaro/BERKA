@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BERKA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f615288f66a0bd52197b19dca7d6fa0f47f97d56")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ba44075f419dc43a0ab72fe608a3dea530c2c42")]
 [assembly: System.Reflection.AssemblyProductAttribute("BERKA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BERKA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

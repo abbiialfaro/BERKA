@@ -153,6 +153,8 @@ C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\runtimes\win\lib\ne
 C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\BERKA.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\BERKA.Share.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\BERKA.Share.pdb
 C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\BERKA.pdb
 C:\Users\gabpc\source\repos\BERKA\BERKA.Web\obj\Debug\net8.0\BERKA.Web.csproj.AssemblyReference.cache
 C:\Users\gabpc\source\repos\BERKA\BERKA.Web\obj\Debug\net8.0\BERKA.Web.GeneratedMSBuildEditorConfig.editorconfig
@@ -180,5 +182,3 @@ C:\Users\gabpc\source\repos\BERKA\BERKA.Web\obj\Debug\net8.0\refint\BERKA.Web.dl
 C:\Users\gabpc\source\repos\BERKA\BERKA.Web\obj\Debug\net8.0\BERKA.Web.pdb
 C:\Users\gabpc\source\repos\BERKA\BERKA.Web\obj\Debug\net8.0\BERKA.Web.genruntimeconfig.cache
 C:\Users\gabpc\source\repos\BERKA\BERKA.Web\obj\Debug\net8.0\ref\BERKA.Web.dll
-C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\BERKA.Share.dll
-C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\BERKA.Share.pdb

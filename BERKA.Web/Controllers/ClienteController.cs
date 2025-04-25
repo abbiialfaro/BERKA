@@ -15,8 +15,9 @@ public class ClienteController : Controller
     public async Task<IActionResult> Index()
     {
         var clientes = await _http.GetFromJsonAsync<List<Cliente>>("cliente");
-        return View(clientes); // Views/Cliente/Index.cshtml
+        return View(clientes);
     }
+
 
     [HttpGet]
     public IActionResult Registrar() => View();
