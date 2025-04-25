@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LxfRYQARqhVUgVszQxBzW9QzTuSFRKDDZazWs8JNXng=",
+  "Hash": "QQJzDd2uG4YJ7pBOw+fu8VsSgZHXTynQ/fohD15f6tQ=",
   "Source": "BERKA.Web",
   "BasePath": "_content/BERKA.Web",
   "Mode": "Default",
@@ -92,6 +92,27 @@
       "OriginalItemSpec": "wwwroot\\images\\bg-login.jpg"
     },
     {
+      "Identity": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA.Web\\wwwroot\\images\\car-icon.png",
+      "SourceId": "BERKA.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA.Web\\wwwroot\\",
+      "BasePath": "_content/BERKA.Web",
+      "RelativePath": "images/car-icon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4l3yhbqh9q",
+      "Integrity": "WBx0GYs6e0ub3XPyxSpz27MDblGHYwAr21KYuskZQ+U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\car-icon.png"
+    },
+    {
       "Identity": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA.Web\\wwwroot\\images\\fondo-revision.jpg.jpg",
       "SourceId": "BERKA.Web",
       "SourceType": "Discovered",
@@ -127,8 +148,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "sd73t8x5rp",
-      "Integrity": "IPWlBIf9YNwqQP7oU+JvKFG9BXj4ZVVbxJXSOysfxBk=",
+      "Fingerprint": "jjn003hyry",
+      "Integrity": "0QyIl+dIVaaHYXAUnQmqyIvEz6MPclFOfaCTCwoYZ7Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\logo-bekra.png"
@@ -1600,6 +1621,88 @@
       ]
     },
     {
+      "Route": "images/car-icon.4l3yhbqh9q.png",
+      "AssetFile": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA.Web\\wwwroot\\images\\car-icon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5566"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WBx0GYs6e0ub3XPyxSpz27MDblGHYwAr21KYuskZQ+U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 05:54:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4l3yhbqh9q"
+        },
+        {
+          "Name": "label",
+          "Value": "images/car-icon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WBx0GYs6e0ub3XPyxSpz27MDblGHYwAr21KYuskZQ+U="
+        }
+      ]
+    },
+    {
+      "Route": "images/car-icon.png",
+      "AssetFile": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA.Web\\wwwroot\\images\\car-icon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5566"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WBx0GYs6e0ub3XPyxSpz27MDblGHYwAr21KYuskZQ+U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 05:54:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WBx0GYs6e0ub3XPyxSpz27MDblGHYwAr21KYuskZQ+U="
+        }
+      ]
+    },
+    {
       "Route": "images/fondo-revision.jpg.jpg",
       "AssetFile": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA.Web\\wwwroot\\images\\fondo-revision.jpg.jpg",
       "Selectors": [],
@@ -1682,6 +1785,51 @@
       ]
     },
     {
+      "Route": "images/logo-bekra.jjn003hyry.png",
+      "AssetFile": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA.Web\\wwwroot\\images\\logo-bekra.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "485851"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0QyIl+dIVaaHYXAUnQmqyIvEz6MPclFOfaCTCwoYZ7Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Apr 2025 03:32:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jjn003hyry"
+        },
+        {
+          "Name": "label",
+          "Value": "images/logo-bekra.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0QyIl+dIVaaHYXAUnQmqyIvEz6MPclFOfaCTCwoYZ7Y="
+        }
+      ]
+    },
+    {
       "Route": "images/logo-bekra.png",
       "AssetFile": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA.Web\\wwwroot\\images\\logo-bekra.png",
       "Selectors": [],
@@ -1692,7 +1840,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1079306"
+          "Value": "485851"
         },
         {
           "Name": "Content-Type",
@@ -1700,11 +1848,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IPWlBIf9YNwqQP7oU+JvKFG9BXj4ZVVbxJXSOysfxBk=\""
+          "Value": "\"0QyIl+dIVaaHYXAUnQmqyIvEz6MPclFOfaCTCwoYZ7Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 16:48:22 GMT"
+          "Value": "Wed, 16 Apr 2025 03:32:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1714,52 +1862,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-IPWlBIf9YNwqQP7oU+JvKFG9BXj4ZVVbxJXSOysfxBk="
-        }
-      ]
-    },
-    {
-      "Route": "images/logo-bekra.sd73t8x5rp.png",
-      "AssetFile": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA.Web\\wwwroot\\images\\logo-bekra.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1079306"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"IPWlBIf9YNwqQP7oU+JvKFG9BXj4ZVVbxJXSOysfxBk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 16:48:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "sd73t8x5rp"
-        },
-        {
-          "Name": "label",
-          "Value": "images/logo-bekra.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-IPWlBIf9YNwqQP7oU+JvKFG9BXj4ZVVbxJXSOysfxBk="
+          "Value": "sha256-0QyIl+dIVaaHYXAUnQmqyIvEz6MPclFOfaCTCwoYZ7Y="
         }
       ]
     },

@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\images\\bg-login.jpg"
     },
     {
+      "Id": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA.Web\\wwwroot\\images\\car-icon.png",
+      "PackagePath": "staticwebassets\\images\\car-icon.png"
+    },
+    {
       "Id": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA.Web\\wwwroot\\images\\fondo-revision.jpg.jpg",
       "PackagePath": "staticwebassets\\images\\fondo-revision.jpg.jpg"
     },

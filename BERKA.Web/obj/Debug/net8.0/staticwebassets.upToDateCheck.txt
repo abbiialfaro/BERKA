@@ -1,6 +1,7 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\bg-login.jpg
+wwwroot\images\car-icon.png
 wwwroot\images\fondo-revision.jpg.jpg
 wwwroot\images\logo-bekra.png
 wwwroot\js\site.js

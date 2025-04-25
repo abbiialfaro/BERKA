@@ -9,9 +9,10 @@
     <h1 class="text-success">👥 Administrar Clientes</h1>
 
     <div class="d-flex justify-content-end mb-3">
-        <a asp-action="RegistrarCliente" class="btn btn-success">
+        <a href="@Url.Action("RegistrarCliente","Cliente")" class="btn btn-success mb-3">
             ➕ Registrar Nuevo Cliente
         </a>
+
     </div>
 
     @if (TempData["mensaje"] != null)
@@ -40,11 +41,11 @@
                     <td>@cliente.Telefono</td>
                     <td>@cliente.Categoria</td>
                     <td class="text-center">
-                        <a asp-action="EditarCliente" asp-route-id="@cliente.ID_Cliente" class="btn btn-warning btn-sm">
+                        <a asp-action="EditarCliente" asp-controller="Cliente" asp-route-id="@cliente.ID_Cliente" class="btn btn-warning btn-sm">
                             ✏️ Editar
                         </a>
 
-                        <form asp-action="EliminarCliente" method="post" style="display:inline;" asp-route-id="@cliente.ID_Cliente">
+                        <form asp-action="EliminarCliente" asp-controller="Cliente" method="post" style="display:inline;" asp-route-id="@cliente.ID_Cliente">
                             <button type="submit" class="btn btn-danger btn-sm"
                                     onclick="return confirm('¿Deseas eliminar este cliente?')">
                                 🗑️ Eliminar

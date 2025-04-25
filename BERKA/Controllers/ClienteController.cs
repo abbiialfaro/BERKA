@@ -17,6 +17,8 @@ namespace BERKA.Controllers
         {
             _context = context;
         }
+
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Cliente>>> GetCliente()
         {
@@ -26,20 +28,19 @@ namespace BERKA.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Cliente>> GetCliente(int id)
         {
-            var cliente = await _context.Clientes.FindAsync(id);
-
-            if (cliente == null)
-            {
-                return NotFound();
-            }
-
-            return cliente;
+            var c = await _context.Clientes.FindAsync(id);
+            if (c == null) return NotFound();
+            return c;
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(ClienteViewModel model)
+        public async Task<IActionResult> Post([FromBody] ClienteViewModel model)
         {
-            Console.WriteLine("API recibió la solicitud");
+            Console.WriteLine("👉 API recibió POST con Nombre=" + model.Nombre);
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             var cliente = new Cliente
             {
                 Tipo_Documento = model.TipoDocumento,
@@ -54,7 +55,8 @@ namespace BERKA.Controllers
             _context.Clientes.Add(cliente);
             await _context.SaveChangesAsync();
 
-            return Ok();
+            // Opcional: devolver CreatedAtAction para REST completo
+            return CreatedAtAction(nameof(GetCliente), new { id = cliente.ID_Cliente }, cliente);
         }
 
         [HttpDelete("{id}")]
