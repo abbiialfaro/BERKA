@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Configuración CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("OkiDokiPolicy", policy =>
+    options.AddPolicy("mypolicy", policy =>
     {
         policy.WithOrigins("https://localhost:5130") // <-- frontend MVC
               .AllowAnyHeader()
@@ -24,7 +24,7 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-app.UseCors("OkiDokiPolicy"); // aplica la política
+app.UseCors("mypolicy"); // aplica la política
 
 if (app.Environment.IsDevelopment())
 {

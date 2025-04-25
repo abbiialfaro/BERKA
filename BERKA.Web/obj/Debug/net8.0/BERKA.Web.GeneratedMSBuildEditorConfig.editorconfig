@@ -52,16 +52,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Cliente/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
+[C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/AgendarCita.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhckNpdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Cliente/EditarCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxFZGl0YXJDbGllbnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Cliente/EliminarCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxFbGltaW5hckNsaWVudGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Cliente/Prueba.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxQcnVlYmEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Cliente/RegistrarCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxSZWdpc3RyYXJDbGllbnRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Inspector/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zcGVjdG9yXEluZGV4LmNzaHRtbA==
+[C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/RevisionVehicular.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aXNpb25WZWhpY3VsYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Shared/_Layout.cshtml]

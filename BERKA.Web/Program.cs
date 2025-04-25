@@ -11,6 +11,13 @@ builder.Services.AddSession();
 builder.Services.AddDbContext<BERKAcontext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+// Conexion Frontend con Backend
+builder.Services.AddHttpClient("ApiCliente", client =>
+{
+    client.BaseAddress = new Uri("https://localhost:5129/api/");
+});
+
+
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())
@@ -24,12 +31,6 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseSession();
 app.UseAuthorization();
-
-// Conexion Frontend con Backend
-builder.Services.AddHttpClient("ApiCliente", client =>
-{
-    client.BaseAddress = new Uri("https://localhost:5129/api/");
-});
 
 
 app.MapControllerRoute(

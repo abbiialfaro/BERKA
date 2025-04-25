@@ -180,3 +180,5 @@ C:\Users\gabpc\source\repos\BERKA\BERKA.Web\obj\Debug\net8.0\refint\BERKA.Web.dl
 C:\Users\gabpc\source\repos\BERKA\BERKA.Web\obj\Debug\net8.0\BERKA.Web.pdb
 C:\Users\gabpc\source\repos\BERKA\BERKA.Web\obj\Debug\net8.0\BERKA.Web.genruntimeconfig.cache
 C:\Users\gabpc\source\repos\BERKA\BERKA.Web\obj\Debug\net8.0\ref\BERKA.Web.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\BERKA.Share.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA.Web\bin\Debug\net8.0\BERKA.Share.pdb

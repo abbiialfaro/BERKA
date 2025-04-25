@@ -1,39 +1,31 @@
-﻿// Esta clase manejara las acciones al darle al boton submit de la vista de administrar clientes
-
-using BERKA.Web.Models.ViewModels;
+﻿using BERKA.Models;
+using BERKA.Share.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
-public class ClientesController : Controller
+public class ClienteController : Controller
 {
     private readonly HttpClient _http;
 
-    public ClientesController(IHttpClientFactory factory)
+    public ClienteController(IHttpClientFactory factory)
     {
         _http = factory.CreateClient("ApiCliente");
     }
 
     [HttpGet]
-    public IActionResult RegistrarCliente()
+    public async Task<IActionResult> Index()
     {
-        return View();
+        var clientes = await _http.GetFromJsonAsync<List<Cliente>>("cliente");
+        return View(clientes); // Views/Cliente/Index.cshtml
     }
 
+    [HttpGet]
+    public IActionResult Registrar() => View();
+
     [HttpPost]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> RegistrarCliente(ClienteViewModel model)
+    public async Task<IActionResult> Registrar(ClienteViewModel model)
     {
-        if (!ModelState.IsValid)
-            return View(model);
-
-        var response = await _http.PostAsJsonAsync("clientes", model);
-
-        if (response.IsSuccessStatusCode)
-        {
-            TempData["Éxito"] = "¡Cliente registrado correctamente!";
-            return RedirectToAction("Index"); // o a donde lo necesites
-        }
-
-        ModelState.AddModelError(string.Empty, "Hubo un error al guardar el cliente.");
-        return View(model);
+        if (!ModelState.IsValid) return View(model);
+        var response = await _http.PostAsJsonAsync("cliente", model);
+        return RedirectToAction("Index");
     }
 }

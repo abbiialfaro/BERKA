@@ -1,0 +1,59 @@
+﻿@model BERKA.Share.ViewModels.ClienteViewModel
+
+@{
+    ViewData["Title"] = "Registrar Cliente";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-success">👤 Registrar Cliente</h1>
+<hr />
+
+@if (TempData["mensaje"] != null)
+{
+    <div class="alert alert-success">@TempData["mensaje"]</div>
+}
+
+<form asp-action="RegistrarCliente" method="post">
+    @Html.AntiForgeryToken()
+
+    <div class="form-group mb-3">
+        <label asp-for="TipoDocumento">Cédula</label>
+        <input asp-for="TipoDocumento" class="form-control" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Nombre">Nombre</label>
+        <input asp-for="Nombre" class="form-control" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Apellido">Apellido</label>
+        <input asp-for="Apellido" class="form-control" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Correo">Correo</label>
+        <input asp-for="Correo" type="email" class="form-control" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Telefono">Teléfono</label>
+        <input asp-for="Telefono" type="tel" class="form-control" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Direccion">Dirección</label>
+        <textarea asp-for="Direccion" class="form-control"></textarea>
+    </div>
+
+    <div class="form-group mb-4">
+        <label asp-for="Categoria">Categoría</label>
+        <select asp-for="Categoria" class="form-control">
+            <option value="">--Seleccione--</option>
+            <option value="activo">Activo</option>
+            <option value="inactivo">Inactivo</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-success">Registrar</button>
+</form>

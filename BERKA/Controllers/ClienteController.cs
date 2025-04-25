@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+using BERKA.Share.ViewModels;
+
 namespace BERKA.Controllers
 {
     [Route("api/[controller]")]
@@ -37,6 +39,7 @@ namespace BERKA.Controllers
         [HttpPost]
         public async Task<IActionResult> Post(ClienteViewModel model)
         {
+            Console.WriteLine("API recibió la solicitud");
             var cliente = new Cliente
             {
                 Tipo_Documento = model.TipoDocumento,

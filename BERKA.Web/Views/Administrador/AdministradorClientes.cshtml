@@ -1,5 +1,4 @@
-﻿@using BERKA.Web.Models.ViewModels
-@model CitaViewModel
+﻿@model BERKA.Share.ViewModels.ClienteViewModel
 
 @{
     ViewData["Title"] = "Administrador de Clientes";
@@ -9,7 +8,7 @@
 <h1 class="text-success">👤 @ViewData["Title"]</h1>
 <hr />
 
-<style>
+@* <style>
     .collapsible {
         background-color: #eee;
         color: #444;
@@ -36,45 +35,46 @@
         border: 1px solid #ddd;
         margin-bottom: 20px;
     }
-</style>
+</style> *@
 
 <!-- Registrar Cita -->
-<button type="button" class="collapsible">Registrar Cliente</button>
-<div class="content">
-    <form asp-action="RegistrarCliente" method="post">
+@* <button type="button" class="collapsible">Registrar Cliente</button> *@
+@* <div class="content"> *@
+    <form asp-action="RegistrarCliente" asp-controller="Cliente" method="post">
+        @Html.AntiForgeryToken()
         <div class="form-group mb-3">
-            <label for="tipodocumento">Cédula:</label>
-            <input asp-for="tipodocumento" class="form-control" required />
+        <label for="TipoDocumento">Cédula:</label>
+            <input asp-for="TipoDocumento" class="form-control" required />
         </div>
 
         <div class="form-group mb-3">
-            <label for="nombre">Nombre:</label>
-            <input asp-for="nombre" class="form-control" required />
+        <label for="Nombre">Nombre:</label>
+            <input asp-for="Nombre" class="form-control" required />
         </div>
 
         <div class="form-group mb-3">
-            <label for="apellido">Apellido:</label>
-            <input asp-for="apellido" class="form-control" required />
+        <label for="Apellido">Apellido:</label>
+            <input asp-for="Apellido" class="form-control" required />
         </div>
 
         <div class="form-group mb-3">
-            <label for="correo">Correo:</label>
-            <input asp-for="correo" type="email" class="form-control" required />
+        <label for="Correo">Correo:</label>
+            <input asp-for="Correo" type="email" class="form-control" required />
         </div>
 
         <div class="form-group mb-3">
-            <label for="telefono">Teléfono:</label>
-            <input asp-for="telefono" type="tel" class="form-control" required />
+        <label for="Telefono">Teléfono:</label>
+            <input asp-for="Telefono" type="tel" class="form-control" required />
         </div>
 
         <div class="form-group mb-3">
-            <label for="direccion">Dirección:</label>
-            <textarea asp-for="direccion" class="form-control" rows="2" required></textarea>
+        <label for="Direccion">Dirección:</label>
+            <textarea asp-for="Direccion" class="form-control" rows="2" required></textarea>
         </div>
 
         <div class="form-group mb-4">
-            <label for="categoria">Categoría:</label>
-            <select asp-for="categoria" class="form-control" required>
+        <label for="Categoria">Categoría:</label>
+            <select asp-for="Categoria" class="form-control" required>
                 <option value="">-- Seleccione --</option>
                 <option value="activo">Activo</option>
                 <option value="inactivo">Inactivo</option>
@@ -88,7 +88,7 @@
     {
         <div class="alert alert-info mt-4">@ViewBag.Mensaje</div>
     }
-</div>
+@* </div> *@
 
 <!-- Placeholder para otras acciones -->
 <button type="button" class="collapsible">Actualizar Cita</button>

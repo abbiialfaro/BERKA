@@ -11,4 +11,8 @@
     <ProjectReference Include="..\BERKA\BERKA.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Inspector\" />
+  </ItemGroup>
+
 </Project>

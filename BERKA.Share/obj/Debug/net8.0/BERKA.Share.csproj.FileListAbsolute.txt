@@ -1,0 +1,11 @@
+C:\Users\gabpc\source\repos\BERKA\BERKA.Share\bin\Debug\net8.0\BERKA.Share.deps.json
+C:\Users\gabpc\source\repos\BERKA\BERKA.Share\bin\Debug\net8.0\BERKA.Share.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA.Share\bin\Debug\net8.0\BERKA.Share.pdb
+C:\Users\gabpc\source\repos\BERKA\BERKA.Share\obj\Debug\net8.0\BERKA.Share.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabpc\source\repos\BERKA\BERKA.Share\obj\Debug\net8.0\BERKA.Share.AssemblyInfoInputs.cache
+C:\Users\gabpc\source\repos\BERKA\BERKA.Share\obj\Debug\net8.0\BERKA.Share.AssemblyInfo.cs
+C:\Users\gabpc\source\repos\BERKA\BERKA.Share\obj\Debug\net8.0\BERKA.Share.csproj.CoreCompileInputs.cache
+C:\Users\gabpc\source\repos\BERKA\BERKA.Share\obj\Debug\net8.0\BERKA.Share.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA.Share\obj\Debug\net8.0\refint\BERKA.Share.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA.Share\obj\Debug\net8.0\BERKA.Share.pdb
+C:\Users\gabpc\source\repos\BERKA\BERKA.Share\obj\Debug\net8.0\ref\BERKA.Share.dll

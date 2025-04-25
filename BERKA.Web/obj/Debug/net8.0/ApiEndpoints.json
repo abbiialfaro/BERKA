@@ -135,29 +135,19 @@
   },
   {
     "ContainingType": "BERKA.Controllers.ClienteController",
-    "Method": "PostCliente",
+    "Method": "Post",
     "RelativePath": "api/Cliente",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cliente",
-        "Type": "BERKA.Models.Cliente",
+        "Name": "model",
+        "Type": "BERKA.Share.ViewModels.ClienteViewModel",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "BERKA.Models.Cliente",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "BERKA.Controllers.ClienteController",

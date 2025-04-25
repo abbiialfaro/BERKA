@@ -1,182 +1,45 @@
 ﻿@{
     ViewData["Title"] = "Dashboard Administrador";
     Layout = "~/Views/Shared/_Layout.cshtml";
-
-    var vehiculos = ViewBag.Vehiculos as List<BERKA.Models.Vehiculo>;
-    var citas = ViewBag.Citas as List<BERKA.Models.Cita>;
-    var revisiones = ViewBag.Revisiones as List<BERKA.Models.Revision>;
-    var clientes = ViewBag.Clientes as List<BERKA.Models.Cliente>;
 }
 
-<div class="container-fluid mt-4">
-    <h1 class="text-success mb-4">Panel de Administrador</h1>
-    <div class="row">
-        <div class="col-md-3 col-lg-2">
-            <!-- Ajusta el ancho con col-md-* o col-lg-* -->
-            <div class="list-group">
-                <span class="list-group-item list-group-item-success"><strong>Administrar:</strong></span>
-                <a href="@Url.Action("Clientes", "Administrador")" class="list-group-item list-group-item-action">
-                    Clientes
-                </a>
-                <a href="@Url.Action("Citas", "Administrador")" class="list-group-item list-group-item-action">
-                    Citas
-                </a>
-                <a href="@Url.Action("Combustibles", "Administrador")" class="list-group-item list-group-item-action">
-                    Combustibles
-                </a>
-                <a href="@Url.Action("Estaciones", "Administrador")" class="list-group-item list-group-item-action">
-                    Estaciones
-                </a>
-                <a href="@Url.Action("Revisiones", "Administrador")" class="list-group-item list-group-item-action">
-                    Revisiones
-                </a>
-                <a href="@Url.Action("Vehiculos", "Administrador")" class="list-group-item list-group-item-action">
-                    Vehículos
-                </a>
+<div class="container mt-4">
+    <h1 class="text-success">📊 Panel del Administrador</h1>
+    <p class="text-muted">Selecciona una sección para administrar:</p>
 
-                <!-- Puedes agregar más opciones aquí -->
-            </div>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <a href="@Url.Action("Index", "Cliente")" class="btn btn-outline-success w-100">
+                👥 Administrar Clientes
+            </a>
         </div>
-
-        <div class="col-md-9 col-lg-10">
-
-    <h4 class="text-secondary">Vehículos Registrados</h4>
-    <table class="table table-bordered table-striped">
-        <thead class="table-success">
-            <tr>
-                <th>Placa</th>
-                <th>Marca</th>
-                <th>Modelo</th>
-                <th>Categoría</th>
-                <th>Color</th>
-                <th>Año</th>
-                <th>Kilometraje</th>
-                <th>Combustible</th>
-                <th>Cliente</th>
-                <th>Acción</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var veh in vehiculos)
-            {
-                <tr>
-                    <td>@veh.Placa</td>
-                    <td>@veh.Marca</td>
-                    <td>@veh.Modelo</td>
-                    <td>@veh.Categoria</td>
-                    <td>@veh.Color</td>
-                    <td>@veh.Año</td>
-                    <td>@veh.Kilometraje</td>
-                    <td>@veh.tip_Combustible</td>
-                    <td>@veh.Cliente?.Nombre</td>
-                    <td class="text-center">
-                        <form asp-action="EliminarVehiculo" method="post" style="display:inline;">
-                            <input type="hidden" name="id" value="@veh.ID_Vehiculo" />
-                            <button type="submit" class="btn btn-danger btn-sm" style="padding: 4px 10px;"
-                                    onclick="return confirm('¿Deseas eliminar este vehículo?')">
-                                <i class="bi bi-trash"></i> Eliminar
-                            </button>
-                        </form>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-
-    <h4 class="text-secondary mt-5">Citas Registradas</h4>
-    <table class="table table-bordered table-striped">
-        <thead class="table-success">
-            <tr>
-                <th>Fecha</th>
-                <th>Hora</th>
-                <th>Estado</th>
-                <th>Inspector</th>
-                <th>Cliente</th>
-                <th>Vehículo</th>
-                <th>Acción</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var cita in citas)
-            {
-                <tr>
-                    <td>@cita.Fecha.ToShortDateString()</td>
-                    <td>@cita.Hora</td>
-                    <td>@cita.Estado</td>
-                    <td>@cita.Inspector?.Nombre @cita.Inspector?.Apellido</td>
-                    <td>@cita.Cliente?.Nombre</td>
-                    <td>@cita.Vehiculo?.Placa</td>
-                    <td class="text-center">
-                        <form asp-action="EliminarCita" method="post" style="display:inline;">
-                            <input type="hidden" name="id" value="@cita.ID_Cita" />
-                            <button type="submit" class="btn btn-danger btn-sm" style="padding: 4px 10px;"
-                                    onclick="return confirm('¿Deseas eliminar esta cita?')">
-                                <i class="bi bi-trash"></i> Eliminar
-                            </button>
-                        </form>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-
-    <h4 class="text-secondary mt-5">Revisiones</h4>
-    <table class="table table-bordered table-striped">
-        <thead class="table-success">
-            <tr>
-                <th>Fecha</th>
-                <th>Cliente</th>
-                <th>Vehículo</th>
-                <th>Resultado</th>
-                <th>Observaciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var rev in revisiones)
-            {
-                <tr>
-                    <td>@rev.FechaRevision.ToShortDateString()</td>
-                    <td>@rev.Cita?.Cliente?.Nombre</td>
-                    <td>@rev.Cita?.Vehiculo?.Placa</td>
-                    <td>@rev.Resultado</td>
-                    <td>@rev.Observaciones</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-
-    <h4 class="text-secondary mt-5">Clientes Registrados</h4>
-    <table class="table table-bordered table-striped">
-        <thead class="table-success">
-            <tr>
-                <th>Nombre</th>
-                <th>Correo</th>
-                <th>Teléfono</th>
-                <th>Acción</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var cli in clientes)
-            {
-                <tr>
-                    <td>@cli.Nombre</td>
-                    <td>@cli.Correo</td>
-                    <td>@cli.Telefono</td>
-                    <td class="text-center">
-                        <form asp-action="EliminarCliente" method="post" style="display:inline;">
-                            <input type="hidden" name="id" value="@cli.ID_Cliente" />
-                            <button type="submit" class="btn btn-danger btn-sm" style="padding: 4px 10px;"
-                                    onclick="return confirm('¿Deseas eliminar este cliente?')">
-                                <i class="bi bi-trash"></i> Eliminar
-                            </button>
-                        </form>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+        <div class="col-md-4">
+            <a href="@Url.Action("Index", "Cita")" class="btn btn-outline-success w-100">
+                📅 Administrar Citas
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="@Url.Action("Index", "Vehiculo")" class="btn btn-outline-success w-100">
+                🚗 Administrar Vehículos
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="@Url.Action("Index", "Revision")" class="btn btn-outline-success w-100">
+                🔍 Administrar Revisiones
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="@Url.Action("Index", "Estacion")" class="btn btn-outline-success w-100">
+                ⛽ Administrar Estaciones
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="@Url.Action("Index", "Combustible")" class="btn btn-outline-success w-100">
+                💧 Administrar Combustibles
+            </a>
+        </div>
+    </div>
 </div>
-
 <div class="d-flex justify-content-end mb-3">
     <form asp-action="Dashboard" asp-controller="Administrador" method="get">
         <button type="submit" class="btn btn-outline-success">

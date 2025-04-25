@@ -253,41 +253,24 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Cliente"
+                "$ref": "#/components/schemas/ClienteViewModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Cliente"
+                "$ref": "#/components/schemas/ClienteViewModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Cliente"
+                "$ref": "#/components/schemas/ClienteViewModel"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Cliente"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Cliente"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Cliente"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -2366,6 +2349,51 @@
           },
           "categoria": {
             "maxLength": 30,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ClienteViewModel": {
+        "required": [
+          "apellido",
+          "categoria",
+          "correo",
+          "direccion",
+          "nombre",
+          "telefono",
+          "tipoDocumento"
+        ],
+        "type": "object",
+        "properties": {
+          "tipoDocumento": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "nombre": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "apellido": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "correo": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "telefono": {
+            "minLength": 1,
+            "type": "string",
+            "format": "tel"
+          },
+          "direccion": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "categoria": {
             "minLength": 1,
             "type": "string"
           }

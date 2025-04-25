@@ -2,7 +2,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace BERKA.Web.Models.ViewModels
+namespace BERKA.Share.ViewModels
 {
     public class ClienteViewModel
     {

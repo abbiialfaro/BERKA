@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace BERKA.Web.Models.ViewModels
+namespace BERKA.Share.ViewModels
 {
     public class CitaViewModel
     {

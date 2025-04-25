@@ -1,0 +1,12 @@
+﻿@model BERKA.Share.ViewModels.ClienteViewModel
+
+<h2>Test Form</h2>
+
+<form asp-action="Prueba" asp-controller="Cliente" method="post">
+    @Html.AntiForgeryToken()
+
+    <label>Nombre</label>
+    <input asp-for="Nombre" class="form-control" />
+
+    <button type="submit" class="btn btn-primary mt-2">Enviar</button>
+</form>
