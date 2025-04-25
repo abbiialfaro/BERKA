@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BERKA.Share\BERKA.Share.csproj" />
     <ProjectReference Include="..\BERKA\BERKA.csproj" />
   </ItemGroup>
 

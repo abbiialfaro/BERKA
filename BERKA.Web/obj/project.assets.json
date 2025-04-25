@@ -1091,6 +1091,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "BERKA.Share": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.13",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.13",
           "Newtonsoft.Json": "8.0.3",
@@ -1105,6 +1106,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "BERKA.Share/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/BERKA.Share.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BERKA.Share.dll": {}
+        }
       }
     }
   },
@@ -3179,11 +3190,17 @@
       "type": "project",
       "path": "../BERKA/BERKA.csproj",
       "msbuildProject": "../BERKA/BERKA.csproj"
+    },
+    "BERKA.Share/1.0.0": {
+      "type": "project",
+      "path": "../BERKA.Share/BERKA.Share.csproj",
+      "msbuildProject": "../BERKA.Share/BERKA.Share.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "BERKA >= 1.0.0"
+      "BERKA >= 1.0.0",
+      "BERKA.Share >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3218,6 +3235,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA.Share\\BERKA.Share.csproj": {
+              "projectPath": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA.Share\\BERKA.Share.csproj"
+            },
             "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA\\BERKA.csproj": {
               "projectPath": "C:\\Users\\gabpc\\source\\repos\\BERKA\\BERKA\\BERKA.csproj"
             }
