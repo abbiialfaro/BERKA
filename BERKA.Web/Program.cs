@@ -25,6 +25,13 @@ app.UseRouting();
 app.UseSession();
 app.UseAuthorization();
 
+// Conexion Frontend con Backend
+builder.Services.AddHttpClient("ApiCliente", client =>
+{
+    client.BaseAddress = new Uri("https://localhost:5129/api/");
+});
+
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

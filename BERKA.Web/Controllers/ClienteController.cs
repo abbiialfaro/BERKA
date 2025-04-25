@@ -1,74 +1,39 @@
-﻿using BERKA.Web.Models;
+﻿// Esta clase manejara las acciones al darle al boton submit de la vista de administrar clientes
+
+using BERKA.Web.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using System.Text;
 
-namespace BERKA.Web.Controllers
+public class ClientesController : Controller
 {
-    public class ClienteController : Controller
+    private readonly HttpClient _http;
+
+    public ClientesController(IHttpClientFactory factory)
     {
-        private readonly HttpClient _httpClient;
-        private readonly string _apiBaseUrl;
+        _http = factory.CreateClient("ApiCliente");
+    }
 
-        public ClienteController(IHttpClientFactory factory, IConfiguration config)
-        {
-            _httpClient = factory.CreateClient();
-            _apiBaseUrl = config["ApiSettings:BaseUrl"];
-        }
+    [HttpGet]
+    public IActionResult RegistrarCliente()
+    {
+        return View();
+    }
 
-        [HttpGet]
-        public async Task<IActionResult> SacarCita()
-        {
-            var model = new CitaViewModel
-            {
-                Fecha = DateTime.Today,
-                Hora = TimeSpan.FromHours(9)
-            };
-
-            await CargarCategorias(model);
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> RegistrarCliente(ClienteViewModel model)
+    {
+        if (!ModelState.IsValid)
             return View(model);
-        }
 
-        [HttpPost]
-        public async Task<IActionResult> SacarCita(CitaViewModel model)
+        var response = await _http.PostAsJsonAsync("clientes", model);
+
+        if (response.IsSuccessStatusCode)
         {
-            var citaRequest = new CitaRequest
-            {
-                ID_Cliente = 1,
-                Fecha = model.Fecha,
-                Hora = model.Hora,
-                Estado = "Pendiente",
-                Placa = model.Placa,
-                Categoria = model.Categoria
-            };
-
-            var json = JsonConvert.SerializeObject(citaRequest);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-            var response = await _httpClient.PostAsync($"{_apiBaseUrl}/api/cita", content);
-
-            if (response.IsSuccessStatusCode)
-            {
-                ViewBag.Mensaje = "¡Cita agendada correctamente!";
-            }
-            else
-            {
-                var error = await response.Content.ReadAsStringAsync();
-                ViewBag.Mensaje = $"Error al agendar la cita. Código: {response.StatusCode} - {error}";
-            }
-
-            await CargarCategorias(model);
-            return View(model);
+            TempData["Éxito"] = "¡Cliente registrado correctamente!";
+            return RedirectToAction("Index"); // o a donde lo necesites
         }
 
-        private async Task CargarCategorias(CitaViewModel model)
-        {
-            var response = await _httpClient.GetAsync($"{_apiBaseUrl}/api/vehiculo/categorias");
-            if (response.IsSuccessStatusCode)
-            {
-                var categorias = await response.Content.ReadFromJsonAsync<List<string>>();
-                model.Categorias = categorias ?? new();
-            }
-        }
+        ModelState.AddModelError(string.Empty, "Hubo un error al guardar el cliente.");
+        return View(model);
     }
 }

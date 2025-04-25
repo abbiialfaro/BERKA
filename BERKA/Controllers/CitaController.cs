@@ -23,6 +23,15 @@ namespace BERKA.Controllers
             return await _context.Citas.ToListAsync();
         }
 
+        [HttpPost]
+        public async Task<ActionResult<Cita>> PostCliente(Cita cita)
+        {
+            _context.Citas.Add(cita);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction("GetCita", new { id = cita.ID_Cita }, cita);
+        }
+
         [HttpGet("{id}")]
         public async Task<ActionResult<Cita>> PostCita(CitaRequest request)
         {

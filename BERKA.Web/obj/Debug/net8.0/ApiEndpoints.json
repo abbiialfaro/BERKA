@@ -21,6 +21,32 @@
   },
   {
     "ContainingType": "BERKA.Controllers.CitaController",
+    "Method": "PostCliente",
+    "RelativePath": "api/Cita",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cita",
+        "Type": "BERKA.Models.Cita",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BERKA.Models.Cita",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BERKA.Controllers.CitaController",
     "Method": "PostCita",
     "RelativePath": "api/Cita/{id}",
     "HttpMethod": "GET",

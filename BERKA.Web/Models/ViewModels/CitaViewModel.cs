@@ -1,8 +1,10 @@
-﻿using System;
+﻿// Esta clase representa los campos del formulario para agregar una nueva cita, con validaciones
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace BERKA.Web.Models
+namespace BERKA.Web.Models.ViewModels
 {
     public class CitaViewModel
     {

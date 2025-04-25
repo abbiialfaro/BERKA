@@ -1,4 +1,5 @@
-﻿@model BERKA.Web.Models.CitaViewModel
+﻿@using BERKA.Web.Models.ViewModels
+@model CitaViewModel
 
 @{
     ViewData["Title"] = "Administrador de Clientes";
@@ -42,8 +43,8 @@
 <div class="content">
     <form asp-action="RegistrarCliente" method="post">
         <div class="form-group mb-3">
-            <label for="tipo_Documento">Tipo de Documento:</label>
-            <input asp-for="tipo_Documento" class="form-control" required />
+            <label for="tipodocumento">Cédula:</label>
+            <input asp-for="tipodocumento" class="form-control" required />
         </div>
 
         <div class="form-group mb-3">

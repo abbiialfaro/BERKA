@@ -35,12 +35,23 @@ namespace BERKA.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Cliente>> PostCliente(Cliente cliente)
+        public async Task<IActionResult> Post(ClienteViewModel model)
         {
+            var cliente = new Cliente
+            {
+                Tipo_Documento = model.TipoDocumento,
+                Nombre = model.Nombre,
+                Apellido = model.Apellido,
+                Correo = model.Correo,
+                Telefono = model.Telefono,
+                Direccion = model.Direccion,
+                Categoria = model.Categoria
+            };
+
             _context.Clientes.Add(cliente);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetCliente", new { id = cliente.ID_Cliente }, cliente);
+            return Ok();
         }
 
         [HttpDelete("{id}")]
