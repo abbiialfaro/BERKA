@@ -525,8 +525,8 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BERKA.Controllers.InspectorController",
-    "Method": "GetInspector",
+    "ContainingType": "InspectorController",
+    "Method": "Get",
     "RelativePath": "api/Inspector",
     "HttpMethod": "GET",
     "IsController": true,
@@ -545,34 +545,24 @@
     ]
   },
   {
-    "ContainingType": "BERKA.Controllers.InspectorController",
-    "Method": "PostInspector",
+    "ContainingType": "InspectorController",
+    "Method": "Post",
     "RelativePath": "api/Inspector",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "inspector",
-        "Type": "BERKA.Models.Inspector",
+        "Name": "m",
+        "Type": "BERKA.Share.ViewModels.InspectorViewModel",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "BERKA.Models.Inspector",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "BERKA.Controllers.InspectorController",
-    "Method": "GetInspector",
+    "ContainingType": "InspectorController",
+    "Method": "Get",
     "RelativePath": "api/Inspector/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -597,24 +587,8 @@
     ]
   },
   {
-    "ContainingType": "BERKA.Controllers.InspectorController",
-    "Method": "DeleteInspector",
-    "RelativePath": "api/Inspector/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BERKA.Controllers.InspectorController",
-    "Method": "PutInspector",
+    "ContainingType": "InspectorController",
+    "Method": "Put",
     "RelativePath": "api/Inspector/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -626,8 +600,24 @@
         "IsRequired": true
       },
       {
-        "Name": "inspector",
-        "Type": "BERKA.Models.Inspector",
+        "Name": "m",
+        "Type": "BERKA.Share.ViewModels.InspectorViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InspectorController",
+    "Method": "Delete",
+    "RelativePath": "api/Inspector/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

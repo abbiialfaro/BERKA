@@ -24,20 +24,16 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Administrador/AdministradorCitas.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxBZG1pbmlzdHJhZG9yQ2l0YXMuY3NodG1s
+[C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Account/Revision.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXZpc2lvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Administrador/AdministradorClientes.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxBZG1pbmlzdHJhZG9yQ2xpZW50ZXMuY3NodG1s
+[C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Account/SacarCita.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTYWNhckNpdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Administrador/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/AgendarCita.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhckNpdGEuY3NodG1s
+[C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Administrador/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Cita/EditarCita.cshtml]
@@ -76,12 +72,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Inspector/EditarInspector.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zcGVjdG9yXEVkaXRhckluc3BlY3Rvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Inspector/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zcGVjdG9yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/RevisionVehicular.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aXNpb25WZWhpY3VsYXIuY3NodG1s
+[C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Inspector/RegistrarInspector.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zcGVjdG9yXFJlZ2lzdHJhckluc3BlY3Rvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Revision/Index.cshtml]

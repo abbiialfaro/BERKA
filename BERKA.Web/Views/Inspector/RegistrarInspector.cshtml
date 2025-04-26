@@ -1,0 +1,46 @@
+﻿@model BERKA.Share.ViewModels.InspectorViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Registrar Inspector";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-success">➕ Registrar Inspector</h2>
+@Html.ValidationSummary(true, "", new { @class = "text-danger mb-3" })
+
+<form asp-controller="Inspector" asp-action="RegistrarInspector" method="post">
+    @Html.AntiForgeryToken()
+
+    <div class="mb-3">
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Apellido"></label>
+        <input asp-for="Apellido" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Correo"></label>
+        <input asp-for="Correo" class="form-control" type="email" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Telefono"></label>
+        <input asp-for="Telefono" class="form-control" type="tel" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Estacion"></label>
+        <input asp-for="Estacion" class="form-control" type="number" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Contraseña"></label>
+        <input asp-for="Contraseña" class="form-control" type="password" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Estado"></label>
+        <input asp-for="Estado" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success">Guardar</button>
+    <a asp-action="Index" asp-controller="Inspector" class="btn btn-secondary ms-2">Cancelar</a>
+</form>

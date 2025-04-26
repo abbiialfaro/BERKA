@@ -941,41 +941,24 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Inspector"
+                "$ref": "#/components/schemas/InspectorViewModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Inspector"
+                "$ref": "#/components/schemas/InspectorViewModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Inspector"
+                "$ref": "#/components/schemas/InspectorViewModel"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Inspector"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Inspector"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Inspector"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -1019,27 +1002,6 @@
           }
         }
       },
-      "delete": {
-        "tags": [
-          "Inspector"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
       "put": {
         "tags": [
           "Inspector"
@@ -1059,21 +1021,42 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Inspector"
+                "$ref": "#/components/schemas/InspectorViewModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Inspector"
+                "$ref": "#/components/schemas/InspectorViewModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Inspector"
+                "$ref": "#/components/schemas/InspectorViewModel"
               }
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Inspector"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -2482,6 +2465,53 @@
           },
           "estado": {
             "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "InspectorViewModel": {
+        "required": [
+          "apellido",
+          "contraseña",
+          "correo",
+          "estacion",
+          "estado",
+          "nombre",
+          "telefono"
+        ],
+        "type": "object",
+        "properties": {
+          "iD_Inspector": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "apellido": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "correo": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "telefono": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "estacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "contraseña": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "estado": {
             "minLength": 1,
             "type": "string"
           }

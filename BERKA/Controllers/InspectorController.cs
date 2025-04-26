@@ -1,90 +1,69 @@
 ﻿using BERKA.Models;
-using Microsoft.AspNetCore.Http;
+using BERKA.Share.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace BERKA.Controllers
+[ApiController]
+[Route("api/[controller]")]
+public class InspectorController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class InspectorController : ControllerBase
+    private readonly BERKAcontext _context;
+    public InspectorController(BERKAcontext context) => _context = context;
+
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<Inspector>>> Get()
+        => await _context.Inspectores.ToListAsync();
+
+    [HttpGet("{id}")]
+    public async Task<ActionResult<Inspector>> Get(int id)
     {
-        private readonly BERKAcontext _context;
+        var i = await _context.Inspectores.FindAsync(id);
+        return i == null ? NotFound() : Ok(i);
+    }
 
-        public InspectorController(BERKAcontext context)
+    [HttpPost]
+    public async Task<IActionResult> Post([FromBody] InspectorViewModel m)
+    {
+        if (!ModelState.IsValid) return BadRequest(ModelState);
+        var i = new Inspector
         {
-            _context = context;
-        }
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Inspector>>> GetInspector()
-        {
-            return await _context.Inspectores.ToListAsync();
-        }
+            Nombre = m.Nombre,
+            Apellido = m.Apellido,
+            Correo = m.Correo,
+            Telefono = m.Telefono,
+            Estacion = m.Estacion,
+            Contraseña = m.Contraseña,
+            Estado = m.Estado
+        };
+        _context.Inspectores.Add(i);
+        await _context.SaveChangesAsync();
+        return CreatedAtAction(nameof(Get), new { id = i.ID_Inspector }, i);
+    }
 
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Inspector>> GetInspector(int id)
-        {
-            var inspector = await _context.Inspectores.FindAsync(id);
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Put(int id, [FromBody] InspectorViewModel m)
+    {
+        if (!ModelState.IsValid) return BadRequest(ModelState);
+        var i = await _context.Inspectores.FindAsync(id);
+        if (i == null) return NotFound();
+        i.Nombre = m.Nombre;
+        i.Apellido = m.Apellido;
+        i.Correo = m.Correo;
+        i.Telefono = m.Telefono;
+        i.Estacion = m.Estacion;
+        i.Contraseña = m.Contraseña;
+        i.Estado = m.Estado;
+        await _context.SaveChangesAsync();
+        return NoContent();
+    }
 
-            if (inspector == null)
-            {
-                return NotFound();
-            }
-
-            return inspector;
-        }
-
-        [HttpPost]
-        public async Task<ActionResult<Inspector>> PostInspector(Inspector inspector)
-        {
-            _context.Inspectores.Add(inspector);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetInspector", new { id = inspector.ID_Inspector }, inspector);
-        }
-
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteInspector(int id)
-        {
-            var inspector = await _context.Inspectores.FindAsync(id);
-            if (inspector == null)
-            {
-                return NotFound();
-            }
-
-            _context.Inspectores.Remove(inspector);
-            await _context.SaveChangesAsync();
-            return NoContent();
-        }
-
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutInspector(int id, Inspector inspector)
-        {
-            if (id != inspector.ID_Inspector)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(inspector).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!_context.Inspectores.Any(e => e.ID_Inspector == id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var i = await _context.Inspectores.FindAsync(id);
+        if (i == null) return NotFound();
+        _context.Inspectores.Remove(i);
+        await _context.SaveChangesAsync();
+        return NoContent();
     }
 }
-

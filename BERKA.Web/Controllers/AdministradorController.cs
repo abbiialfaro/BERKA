@@ -20,36 +20,57 @@ namespace BERKA.Web.Controllers
             _apiBaseUrl = config["ApiSettings:BaseUrl"];
         }
 
+        [HttpGet]
         public async Task<IActionResult> Dashboard()
         {
-            ViewBag.InspectoresActivos = await _context.Inspectores.CountAsync(i => i.Estado == "Activo");
-            ViewBag.TotalCitas = await _context.Citas.CountAsync();
-            ViewBag.Aprobados = await _context.Revisiones.CountAsync(r => r.Resultado == "Aprobado");
-            ViewBag.Rechazados = await _context.Revisiones.CountAsync(r => r.Resultado == "Rechazado");
+            var today = DateTime.Today;
 
-            var clientes = await _context.Clientes.ToListAsync();
-            var citas = await _context.Citas
-                .Include(c => c.Cliente)
-                .Include(c => c.Vehiculo)
-                .Include(c => c.Inspector)
-                .ToListAsync();
+            // 1) Generar las 7 fechas: hoy y los 6 días anteriores
+            var fechas = Enumerable
+                .Range(0, 7)                                // 0,1,2,3,4,5,6
+                .Select(i => today.AddDays(i - 6))          // -6,-5,...,0 → fechas de hace 6 días hasta hoy
+                .ToList();
 
-            var revisiones = await _context.Revisiones
-                .Include(r => r.Cita)
-                    .ThenInclude(c => c.Cliente)
-                .Include(r => r.Cita)
-                    .ThenInclude(c => c.Vehiculo)
-                .ToListAsync();
+            // 2) Contar citas por cada fecha
+            var citasCounts = new List<int>();
+            foreach (var fecha in fechas)
+            {
+                var count = await _context.Citas
+                    .CountAsync(c => c.Fecha.Date == fecha);
+                citasCounts.Add(count);
+            }
 
-            var vehiculos = await _context.Vehiculos.ToListAsync();
+            // 3) Contar revisiones
+            var aprobados = await _context.Revisiones
+                .CountAsync(r => r.Resultado == "Aprobado");
+            var rechazados = await _context.Revisiones
+                .CountAsync(r => r.Resultado == "Rechazado");
 
-            ViewBag.Clientes = clientes;
-            ViewBag.Citas = citas;
-            ViewBag.Revisiones = revisiones;
-            ViewBag.Vehiculos = vehiculos;
+            // 4) Pasar todo a la vista
+            ViewBag.CitasLabels = fechas
+                .Select(f => f.ToString("dd-MMM"))
+                .ToList();
+            ViewBag.CitasData = citasCounts;
+            ViewBag.Aprobados = aprobados;
+            ViewBag.Rechazados = rechazados;
 
-            return View("Index");
+            ViewBag.Vehiculos = await _context.Vehiculos.Include(v => v.Cliente).ToListAsync();
+            ViewBag.Citas = await _context.Citas
+                                    .Include(c => c.Cliente)
+                                    .Include(c => c.Vehiculo)
+                                    .Include(c => c.Inspector)
+                                    .ToListAsync();
+            ViewBag.Revisiones = await _context.Revisiones
+                                        .Include(r => r.Cita)
+                                        .ThenInclude(c => c.Cliente)
+                                        .Include(r => r.Cita)
+                                        .ThenInclude(c => c.Vehiculo)
+                                        .ToListAsync();
+            ViewBag.Clientes = await _context.Clientes.ToListAsync();
+
+            return View();
         }
+        
 
         [HttpPost]
         public async Task<IActionResult> EliminarVehiculo(int id)

@@ -24,6 +24,11 @@
             </a>
         </div>
         <div class="col-md-4">
+            <a href="@Url.Action("Index", "Inspector")" class="btn btn-outline-success w-100">
+                🧑‍🔧️ Administrar Inspectores
+            </a>
+        </div>
+@*         <div class="col-md-4">
             <a href="@Url.Action("Index", "Revision")" class="btn btn-outline-success w-100">
                 🔍 Administrar Revisiones
             </a>
@@ -37,7 +42,7 @@
             <a href="@Url.Action("Index", "Combustible")" class="btn btn-outline-success w-100">
                 💧 Administrar Combustibles
             </a>
-        </div>
+        </div> *@
     </div>
 </div>
 <div class="d-flex justify-content-end mb-3">
@@ -58,54 +63,47 @@
 @section Scripts {
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
+        // 1. Obtén los arrays pasados desde el controller
+        const labels = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(ViewBag.CitasLabels));
+        const dataCitas = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(ViewBag.CitasData));
+
+        // 2. Gráfico de líneas: citas últimos 7 días
         const ctx = document.getElementById('graficoCitas').getContext('2d');
-        const graficoCitas = new Chart(ctx, {
+        new Chart(ctx, {
             type: 'line',
             data: {
-                labels: ["@DateTime.Today.AddDays(-6).ToString("dd-MMM")", "@DateTime.Today.AddDays(-5).ToString("dd-MMM")", "@DateTime.Today.AddDays(-4).ToString("dd-MMM")", "@DateTime.Today.AddDays(-3).ToString("dd-MMM")", "@DateTime.Today.AddDays(-2).ToString("dd-MMM")", "@DateTime.Today.AddDays(-1).ToString("dd-MMM")", "@DateTime.Today.ToString("dd-MMM")"],
+                labels: labels,
                 datasets: [{
                     label: 'Citas Registradas',
-                    data: [3, 5, 7, 4, 8, 6, 9],
-                    backgroundColor: 'rgba(0, 128, 0, 0.2)',
-                    borderColor: 'rgba(0, 128, 0, 1)',
-                    borderWidth: 2,
+                    data: dataCitas,
                     fill: true,
                     tension: 0.3
                 }]
             },
             options: {
                 scales: {
-                    y: {
-                        beginAtZero: true,
-                        precision: 0
-                    }
+                    y: { beginAtZero: true, precision: 0 }
                 }
             }
         });
-    </script>
 
-    <script>
-        const ctxDoughnut = document.getElementById('graficoRevisiones')?.getContext('2d');
-        if (ctxDoughnut) {
-            const chart = new Chart(ctxDoughnut, {
+        // 3. Gráfico doughnut: revisiones aprobadas vs rechazadas
+        const aprobados   = @ViewBag.Aprobados;
+        const rechazados  = @ViewBag.Rechazados;
+        const ctx2 = document.getElementById('graficoRevisiones')?.getContext('2d');
+        if (ctx2) {
+            new Chart(ctx2, {
                 type: 'doughnut',
                 data: {
                     labels: ['Aprobados', 'Rechazados'],
                     datasets: [{
-                        label: 'Revisiones',
-                        data: [@ViewBag.Aprobados, @ViewBag.Rechazados],
-                        backgroundColor: ['#28a745', '#dc3545'],
-                        borderColor: ['#ffffff', '#ffffff'],
+                        data: [aprobados, rechazados],
                         borderWidth: 1
                     }]
                 },
                 options: {
                     responsive: true,
-                    plugins: {
-                        legend: {
-                            position: 'bottom'
-                        }
-                    }
+                    plugins: { legend: { position: 'bottom' } }
                 }
             });
         }

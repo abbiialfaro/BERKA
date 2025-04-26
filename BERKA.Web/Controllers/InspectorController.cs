@@ -1,78 +1,94 @@
 ﻿using BERKA.Models;
-using BERKA.Web.Models;
+using BERKA.Share.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using System.Text;
+using System.Net.Http.Json;
 
 namespace BERKA.Web.Controllers
 {
     public class InspectorController : Controller
     {
-        private readonly HttpClient _httpClient;
-        private readonly string _apiBaseUrl;
+        private readonly HttpClient _http;
+        public InspectorController(IHttpClientFactory factory)
+            => _http = factory.CreateClient("ApiCliente");
 
-        public InspectorController(IHttpClientFactory factory, IConfiguration config)
+        // GET: /Inspector
+        [HttpGet]
+        public async Task<IActionResult> Index()
         {
-            _httpClient = factory.CreateClient();
-            _apiBaseUrl = config["ApiSettings:BaseUrl"];
+            var inspectores = await _http.GetFromJsonAsync<List<Inspector>>("inspector");
+            return View(inspectores);
         }
 
-        
+        // GET: /Inspector/RegistrarInspector
         [HttpGet]
-        public IActionResult RevisarVehiculo(int idCita)
+        public IActionResult RegistrarInspector()
         {
-            var model = new RevisionViewModel
+            // Puedes inicializar valores por defecto si quieres
+            return View(new InspectorViewModel());
+        }
+
+        // POST: /Inspector/RegistrarInspector
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> RegistrarInspector(InspectorViewModel model)
+        {
+            if (!ModelState.IsValid)
+                return View(model);
+
+            var resp = await _http.PostAsJsonAsync("inspector", model);
+            TempData["mensaje"] = resp.IsSuccessStatusCode
+                ? "¡Inspector registrado exitosamente!"
+                : "Error al registrar el inspector.";
+            return RedirectToAction(nameof(Index));
+        }
+
+        // GET: /Inspector/EditarInspector/5
+        [HttpGet]
+        public async Task<IActionResult> EditarInspector(int id)
+        {
+            var insp = await _http.GetFromJsonAsync<Inspector>($"inspector/{id}");
+            if (insp == null) return NotFound();
+
+            var model = new InspectorViewModel
             {
-                ID_Cita = idCita
+                ID_Inspector = insp.ID_Inspector,
+                Nombre = insp.Nombre,
+                Apellido = insp.Apellido,
+                Correo = insp.Correo,
+                Telefono = insp.Telefono,
+                Estacion = insp.Estacion,
+                Contraseña = insp.Contraseña,
+                Estado = insp.Estado
             };
 
             return View(model);
         }
 
+        // POST: /Inspector/EditarInspector
         [HttpPost]
-        public async Task<IActionResult> RegistrarRevision(RevisionViewModel model)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditarInspector(InspectorViewModel model)
         {
-            var resultadoFinal = (model.Luces == "Aprobado" && model.Suspension == "Aprobado" &&
-                                  model.Frenos == "Aprobado" && model.Neumaticos == "Aprobado" &&
-                                  model.Carroceria == "Aprobado" && model.Gases == "Aprobado")
-                                  ? "Aprobado" : "Reprobado";
+            if (!ModelState.IsValid)
+                return View(model);
 
-            var revision = new
-            {
-                ID_Cita = model.ID_Cita,
-                ID_Vehiculo = model.ID_Vehiculo,
-                Resultado = resultadoFinal,
-                Observaciones = model.Observaciones ?? "",
-                FechaRevision = DateTime.Now
-            };
-
-            var json = JsonConvert.SerializeObject(revision);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-            var response = await _httpClient.PostAsync($"{_apiBaseUrl}/api/revision", content);
-
-            if (response.IsSuccessStatusCode)
-            {
-                TempData["Mensaje"] = "¡Revisión registrada correctamente!";
-                return RedirectToAction("RevisarVehiculo");
-            }
-
-            var error = await response.Content.ReadAsStringAsync();
-            ViewBag.Error = $"Error al registrar: {response.StatusCode} - {error}";
-            return View("RevisarVehiculo");
+            var resp = await _http.PutAsJsonAsync($"inspector/{model.ID_Inspector}", model);
+            TempData["mensaje"] = resp.IsSuccessStatusCode
+                ? "¡Inspector actualizado con éxito!"
+                : "Error al actualizar el inspector.";
+            return RedirectToAction(nameof(Index));
         }
 
-        // === Agregar método para eliminar vehículo ===
+        // POST: /Inspector/EliminarInspector/5
         [HttpPost]
-        public async Task<IActionResult> EliminarVehiculo(int id)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EliminarInspector(int id)
         {
-            var response = await _httpClient.DeleteAsync($"{_apiBaseUrl}/api/vehiculo/{id}");
-            return RedirectToAction("Dashboard");
-        }
-
-        public IActionResult Revision()
-        {
-            return View(new RevisionViewModel());
+            var resp = await _http.DeleteAsync($"inspector/{id}");
+            TempData["mensaje"] = resp.IsSuccessStatusCode
+                ? "¡Inspector eliminado exitosamente!"
+                : "Error al eliminar el inspector.";
+            return RedirectToAction(nameof(Index));
         }
     }
 }

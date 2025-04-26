@@ -9,3 +9,4 @@ C:\Users\gabpc\source\repos\BERKA\BERKA.Share\obj\Debug\net8.0\BERKA.Share.dll
 C:\Users\gabpc\source\repos\BERKA\BERKA.Share\obj\Debug\net8.0\refint\BERKA.Share.dll
 C:\Users\gabpc\source\repos\BERKA\BERKA.Share\obj\Debug\net8.0\BERKA.Share.pdb
 C:\Users\gabpc\source\repos\BERKA\BERKA.Share\obj\Debug\net8.0\ref\BERKA.Share.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA.Share\obj\Debug\net8.0\BERKA.Share.sourcelink.json

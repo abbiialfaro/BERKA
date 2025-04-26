@@ -738,3 +738,4 @@ C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\refint\BERKA.dll
 C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\BERKA.pdb
 C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\BERKA.genruntimeconfig.cache
 C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\ref\BERKA.dll
+C:\Users\gabpc\source\repos\BERKA\BERKA\obj\Debug\net8.0\BERKA.sourcelink.json

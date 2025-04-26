@@ -19,6 +19,18 @@ namespace BERKA.Web.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Revision()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult SacarCita()
+        {
+            return View();
+        }
+
         [HttpPost]
         public IActionResult Login(string correo, string contrasena)
         {
@@ -34,10 +46,10 @@ namespace BERKA.Web.Controllers
                     return RedirectToAction("Dashboard", "Administrador");
 
                 if (usuario.Rol == "Inspector")
-                    return RedirectToAction("Revision", "Inspector");
+                    return RedirectToAction("Revision", "Account");
 
                 if (usuario.Rol == "Cliente")
-                    return RedirectToAction("SacarCita", "Cliente");
+                    return RedirectToAction("SacarCita", "Account");
             }
 
             ViewBag.Error = "Credenciales incorrectas.";
