@@ -1,5 +1,71 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model List<BERKA.Models.Vehiculo>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
+    ViewData["Title"] = "Administrar Vehículos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="text-success">🚗 Administrar Vehículos</h1>
+        <a href="@Url.Action("RegistrarVehiculo","Vehiculo")" class="btn btn-success">
+            ➕ Registrar Vehículo
+        </a>
+    </div>
+
+    @if (TempData["mensaje"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["mensaje"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+        </div>
+    }
+
+    <table class="table table-hover align-middle">
+        <thead class="table-success">
+            <tr>
+                <th>Placa</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Categoría</th>
+                <th>Color</th>
+                <th>Año</th>
+                <th>Kilometraje</th>
+                <th>Cliente</th>
+                <th class="text-center">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var v in Model)
+            {
+                <tr>
+                    <td>@v.Placa</td>
+                    <td>@v.Marca</td>
+                    <td>@v.Modelo</td>
+                    <td>@v.Categoria</td>
+                    <td>@v.Color</td>
+                    <td>@v.Año</td>
+                    <td>@v.Kilometraje</td>
+                    <td>@v.Cliente?.Nombre @v.Cliente?.Apellido</td>
+                    <td class="text-center">
+                        <a href="@Url.Action("EditarVehiculo","Vehiculo", new { id = v.ID_Vehiculo })"
+                           class="btn btn-sm btn-warning me-1" title="Editar">
+                            <i class="bi bi-pencil-square"></i>
+                        </a>
+                        <form action="@Url.Action("EliminarVehiculo","Vehiculo", new { id = v.ID_Vehiculo })"
+                              method="post"
+                              class="d-inline p-0 m-0">
+                            @Html.AntiForgeryToken()
+                            <button type="submit"
+                                    class="btn btn-sm btn-danger"
+                                    title="Eliminar"
+                                    onclick="return confirm('¿Deseas eliminar este vehículo?');">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

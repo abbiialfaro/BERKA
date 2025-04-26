@@ -20,9 +20,13 @@ namespace BERKA.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Vehiculo>>> GetVehiculo()
+        public async Task<ActionResult<IEnumerable<Vehiculo>>> GetVehiculos()
         {
-            return await _context.Vehiculos.ToListAsync();
+            var vehiculosConCliente = await _context.Vehiculos
+                .Include(v => v.Cliente)      // <-- incluye la FK
+                .ToListAsync();
+
+            return Ok(vehiculosConCliente);
         }
 
         [HttpGet("{id}")]

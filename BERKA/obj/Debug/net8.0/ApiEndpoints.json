@@ -1087,7 +1087,7 @@
   },
   {
     "ContainingType": "BERKA.Controllers.VehiculoController",
-    "Method": "GetVehiculo",
+    "Method": "GetVehiculos",
     "RelativePath": "api/Vehiculo",
     "HttpMethod": "GET",
     "IsController": true,

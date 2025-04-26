@@ -4,6 +4,8 @@ namespace BERKA.Share.ViewModels
 {
     public class VehiculoViewModel
     {
+        public int ID_Vehiculo { get; set; }
+
         [Required]
         public string Marca { get; set; }
 

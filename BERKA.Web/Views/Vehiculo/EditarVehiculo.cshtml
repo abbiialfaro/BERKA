@@ -1,0 +1,73 @@
+﻿@model BERKA.Share.ViewModels.VehiculoViewModel
+
+@{
+    ViewData["Title"] = "Editar Vehículo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var clientes = ViewBag.Clientes as List<BERKA.Models.Cliente>;
+}
+
+<h2 class="text-warning">✏️ Editar Vehículo</h2>
+@Html.ValidationSummary(true, "", new { @class = "text-danger mb-3" })
+
+<form action="@Url.Action("EditarVehiculo","Vehiculo")" method="post">
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="ID_Vehiculo" value="@Model.ID_Vehiculo" />
+
+    <div class="mb-3">
+        <label for="Placa">Placa</label>
+        <input type="text" name="Placa" id="Placa"
+               value="@Model.Placa" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label for="Marca">Marca</label>
+        <input type="text" name="Marca" id="Marca"
+               value="@Model.Marca" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label for="Modelo">Modelo</label>
+        <input type="text" name="Modelo" id="Modelo"
+               value="@Model.Modelo" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label for="Categoria">Categoría</label>
+        <input type="text" name="Categoria" id="Categoria"
+               value="@Model.Categoria" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label for="Color">Color</label>
+        <input type="text" name="Color" id="Color"
+               value="@Model.Color" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label for="Año">Año</label>
+        <input type="number" name="Año" id="Año"
+               value="@Model.Año" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label for="Tip_Combustible">Tipo de Combustible</label>
+        <input type="number" name="Tip_Combustible" id="Tip_Combustible"
+               value="@Model.Tip_Combustible" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label for="Kilometraje">Kilometraje</label>
+        <input type="number" name="Kilometraje" id="Kilometraje"
+               value="@Model.Kilometraje" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+        <label for="ID_Cliente">Cliente</label>
+        <select name="ID_Cliente" id="ID_Cliente" class="form-control" required>
+            <option value="">--Seleccione Cliente--</option>
+            @foreach (var cli in clientes)
+            {
+                <option value="@cli.ID_Cliente"
+                @(cli.ID_Cliente == Model.ID_Cliente ? "selected" : "")>
+                    @cli.Nombre @cli.Apellido
+                </option>
+            }
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-warning">Actualizar</button>
+    <a href="@Url.Action("Index","Vehiculo")" class="btn btn-secondary ms-2">Cancelar</a>
+</form>

@@ -34,19 +34,33 @@ namespace BERKA.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> RegistrarCita(CitaViewModel model)
         {
+            Console.WriteLine("👉 Entré al POST RegistrarCita, ModelState: " + ModelState.IsValid);
+
             if (!ModelState.IsValid)
             {
+                // DEBUG: escribe errores en consola
+                foreach (var e in ModelState.Values.SelectMany(v => v.Errors))
+                    Console.WriteLine("ModelError: " + e.ErrorMessage);
+                // Recarga datos para selects
                 ViewBag.Clientes = await _http.GetFromJsonAsync<List<Cliente>>("cliente");
                 ViewBag.Inspectores = await _http.GetFromJsonAsync<List<Inspector>>("inspector");
                 return View(model);
             }
 
             var resp = await _http.PostAsJsonAsync("cita", model);
-            TempData["mensaje"] = resp.IsSuccessStatusCode
-                ? "¡Cita registrada con éxito!"
-                : "Error al crear la cita.";
+            Console.WriteLine("👉 API POST /api/cita: " + resp.StatusCode);
+            if (!resp.IsSuccessStatusCode)
+            {
+                ModelState.AddModelError("", "Error al crear cita en API: " + resp.StatusCode);
+                ViewBag.Clientes = await _http.GetFromJsonAsync<List<Cliente>>("cliente");
+                ViewBag.Inspectores = await _http.GetFromJsonAsync<List<Inspector>>("inspector");
+                return View(model);
+            }
+
+            TempData["mensaje"] = "¡Cita registrada con éxito!";
             return RedirectToAction(nameof(Index));
         }
+
 
         // GET: /Cita/EditarCita/{id}
         [HttpGet]
@@ -113,8 +127,20 @@ namespace BERKA.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> VehiculosPorCliente(int id)
         {
+            // 1. Trae todos los vehículos del API
             var todos = await _http.GetFromJsonAsync<List<Vehiculo>>("vehiculo");
-            var filtrados = todos.Where(v => v.Cliente?.ID_Cliente == id).ToList();
+            if (todos == null) return Json(new List<Vehiculo>());
+
+            // 2. Filtra por ID_Cliente
+            var filtrados = todos
+                .Where(v => v.ID_Cliente == id)
+                .Select(v => new {
+                    ID_Vehiculo = v.ID_Vehiculo,
+                    Placa = v.Placa
+                })
+                .ToList();
+
+            // 3. Devuelve JSON
             return Json(filtrados);
         }
     }

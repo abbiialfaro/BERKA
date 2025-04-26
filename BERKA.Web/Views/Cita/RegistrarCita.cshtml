@@ -36,7 +36,10 @@
             <option value="">--Seleccione Cliente--</option>
             @foreach (var cli in clientes)
             {
-                <option value="@cli.ID_Cliente">@cli.Nombre @cli.Apellido</option>
+                <option value="@cli.ID_Cliente"
+                @(cli.ID_Cliente == Model.ID_Cliente ? "selected" : "")>
+                    @cli.Nombre @cli.Apellido
+                </option>
             }
         </select>
     </div>
@@ -45,7 +48,7 @@
         <label for="ID_Vehiculo">Vehículo</label>
         <select name="ID_Vehiculo" id="ID_Vehiculo" class="form-control" required>
             <option value="">--Seleccione Vehículo--</option>
-            @* Se llena dinámicamente *@
+            @* Se llenará dinámicamente *@
         </select>
     </div>
 
@@ -55,7 +58,10 @@
             <option value="">--Seleccione Inspector--</option>
             @foreach (var insp in inspectores)
             {
-                <option value="@insp.ID_Inspector">@insp.Nombre @insp.Apellido</option>
+                <option value="@insp.ID_Inspector"
+                @(insp.ID_Inspector == Model.ID_Inspector ? "selected" : "")>
+                    @insp.Nombre @insp.Apellido
+                </option>
             }
         </select>
     </div>
@@ -65,22 +71,39 @@
 
 @section Scripts {
     <script>
-        document.getElementById('ID_Cliente').addEventListener('change', function() {
-            var clientId = this.value;
-            var vehSel = document.getElementById('ID_Vehiculo');
-            vehSel.innerHTML = '<option value="">--Seleccione Vehículo--</option>';
-            if (!clientId) return;
+        const clienteSel  = document.getElementById('ID_Cliente');
+        const vehiculoSel = document.getElementById('ID_Vehiculo');
 
-            fetch('@Url.Action("VehiculosPorCliente", "Cita")?id=' + clientId)
+        function cargarVehiculos(clienteId, seleccionado) {
+            vehiculoSel.innerHTML = '<option value="">--Seleccione Vehículo--</option>';
+            if (!clienteId) return;
+
+            fetch(`@Url.Action("VehiculosPorCliente", "Cita")?id=${clienteId}`)
                 .then(r => r.json())
                 .then(list => {
                     list.forEach(v => {
-                        var opt = document.createElement('option');
-                        opt.value = v.iD_Vehiculo;
-                        opt.textContent = v.placa;
-                        vehSel.appendChild(opt);
+                        const opt = document.createElement('option');
+                        opt.value       = v.idVehiculo;    // camelCase
+                        opt.textContent = v.placa;         // camelCase
+                        if (seleccionado && v.ID_Vehiculo == seleccionado) {
+                            opt.selected = true;
+                        }
+                        vehiculoSel.appendChild(opt);
                     });
-                });
+                })
+                .catch(err => console.error('Error al cargar vehículos:', err));
+        }
+
+        // Cuando cambie el cliente, recarga vehículos:
+        clienteSel.addEventListener('change', () => {
+            cargarVehiculos(clienteSel.value);
+        });
+
+        // Si venís de editar, carga al inicio el vehículo preseleccionado:
+        document.addEventListener('DOMContentLoaded', () => {
+            const cliId = clienteSel.value;
+            const vehSelId = '@Model.ID_Vehiculo';
+            if (cliId) cargarVehiculos(cliId, vehSelId);
         });
     </script>
 }
