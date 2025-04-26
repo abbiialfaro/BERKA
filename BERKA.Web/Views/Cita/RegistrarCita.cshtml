@@ -10,7 +10,9 @@
 <h2 class="text-success">➕ Registrar Cita</h2>
 @Html.ValidationSummary(true, "", new { @class = "text-danger mb-3" })
 
-<form action="@Url.Action("RegistrarCita","Cita")" method="post">
+<form asp-controller="Cita"
+      asp-action="RegistrarCita"
+      method="post">
     @Html.AntiForgeryToken()
 
     <div class="mb-3">
@@ -81,11 +83,12 @@
             fetch(`@Url.Action("VehiculosPorCliente", "Cita")?id=${clienteId}`)
                 .then(r => r.json())
                 .then(list => {
+                    console.log('Vehículos recibidos:', list); // para depurar
                     list.forEach(v => {
                         const opt = document.createElement('option');
-                        opt.value       = v.idVehiculo;    // camelCase
-                        opt.textContent = v.placa;         // camelCase
-                        if (seleccionado && v.ID_Vehiculo == seleccionado) {
+                        opt.value       = v.iD_Vehiculo;  // CORRECTO
+                        opt.textContent = v.placa;         // CORRECTO
+                        if (seleccionado && v.iD_Vehiculo == seleccionado) {
                             opt.selected = true;
                         }
                         vehiculoSel.appendChild(opt);
@@ -94,16 +97,16 @@
                 .catch(err => console.error('Error al cargar vehículos:', err));
         }
 
-        // Cuando cambie el cliente, recarga vehículos:
         clienteSel.addEventListener('change', () => {
             cargarVehiculos(clienteSel.value);
         });
 
-        // Si venís de editar, carga al inicio el vehículo preseleccionado:
         document.addEventListener('DOMContentLoaded', () => {
-            const cliId = clienteSel.value;
-            const vehSelId = '@Model.ID_Vehiculo';
+            const cliId      = clienteSel.value;
+            const vehSelId   = '@Model.ID_Vehiculo';
             if (cliId) cargarVehiculos(cliId, vehSelId);
         });
     </script>
+}
+
 }

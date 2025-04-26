@@ -21,7 +21,7 @@
   },
   {
     "ContainingType": "CitaController",
-    "Method": "Post",
+    "Method": "RegistrarCita",
     "RelativePath": "api/Cita",
     "HttpMethod": "POST",
     "IsController": true,
@@ -1165,7 +1165,7 @@
   },
   {
     "ContainingType": "BERKA.Controllers.VehiculoController",
-    "Method": "PutVehiculo",
+    "Method": "Put",
     "RelativePath": "api/Vehiculo/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -1177,8 +1177,8 @@
         "IsRequired": true
       },
       {
-        "Name": "vehiculo",
-        "Type": "BERKA.Models.Vehiculo",
+        "Name": "model",
+        "Type": "BERKA.Share.ViewModels.VehiculoViewModel",
         "IsRequired": true
       }
     ],

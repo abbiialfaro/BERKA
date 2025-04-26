@@ -1990,17 +1990,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Vehiculo"
+                "$ref": "#/components/schemas/VehiculoViewModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Vehiculo"
+                "$ref": "#/components/schemas/VehiculoViewModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Vehiculo"
+                "$ref": "#/components/schemas/VehiculoViewModel"
               }
             }
           }

@@ -122,32 +122,27 @@ namespace BERKA.Controllers
             return NoContent();
         }
 
+        // PUT: api/vehiculo/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutVehiculo(int id, Vehiculo vehiculo)
+        public async Task<IActionResult> Put(int id, [FromBody] VehiculoViewModel model)
         {
-            if (id != vehiculo.ID_Vehiculo)
-            {
-                return BadRequest();
-            }
+            if (!ModelState.IsValid) return BadRequest(ModelState);
 
-            _context.Entry(vehiculo).State = EntityState.Modified;
+            var veh = await _context.Vehiculos.FindAsync(id);
+            if (veh == null) return NotFound();
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!_context.Vehiculos.Any(e => e.ID_Vehiculo == id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            // Mapea los campos actualizados
+            veh.Marca = model.Marca;
+            veh.Modelo = model.Modelo;
+            veh.Categoria = model.Categoria;
+            veh.Color = model.Color;
+            veh.Año = model.Año;
+            veh.Placa = model.Placa;
+            veh.tip_Combustible = model.Tip_Combustible;
+            veh.Kilometraje = model.Kilometraje;
+            veh.ID_Cliente = model.ID_Cliente;
 
+            await _context.SaveChangesAsync();
             return NoContent();
         }
     }

@@ -13,7 +13,6 @@ public class CitaController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Cita>>> GetCitas()
     {
-        // Opcionalmente incluye relaciones:
         return await _context.Citas
                              .Include(c => c.Cliente)
                              .Include(c => c.Vehiculo)
@@ -23,7 +22,7 @@ public class CitaController : ControllerBase
 
     // POST: api/cita
     [HttpPost]
-    public async Task<IActionResult> Post([FromBody] CitaViewModel model)
+    public async Task<IActionResult> RegistrarCita([FromBody] CitaViewModel model)
     {
         if (!ModelState.IsValid)
             return BadRequest(ModelState);

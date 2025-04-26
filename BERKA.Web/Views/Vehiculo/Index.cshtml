@@ -50,7 +50,7 @@
                     <td class="text-center">
                         <a href="@Url.Action("EditarVehiculo","Vehiculo", new { id = v.ID_Vehiculo })"
                            class="btn btn-sm btn-warning me-1" title="Editar">
-                            <i class="bi bi-pencil-square"></i>
+                            ✏️
                         </a>
                         <form action="@Url.Action("EliminarVehiculo","Vehiculo", new { id = v.ID_Vehiculo })"
                               method="post"
@@ -60,7 +60,7 @@
                                     class="btn btn-sm btn-danger"
                                     title="Eliminar"
                                     onclick="return confirm('¿Deseas eliminar este vehículo?');">
-                                <i class="bi bi-trash"></i>
+                                🗑️
                             </button>
                         </form>
                     </td>

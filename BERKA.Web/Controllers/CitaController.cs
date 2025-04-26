@@ -23,10 +23,12 @@ namespace BERKA.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> RegistrarCita()
         {
+            // Inicializa Fecha al día de hoy para que el datepicker no salga vacío
+            var model = new CitaViewModel { Fecha = DateTime.Today };
+
             ViewBag.Clientes = await _http.GetFromJsonAsync<List<Cliente>>("cliente");
             ViewBag.Inspectores = await _http.GetFromJsonAsync<List<Inspector>>("inspector");
-            // Vehicles serán cargados por AJAX
-            return View(new CitaViewModel());
+            return View(model);
         }
 
         // POST: /Cita/RegistrarCita
@@ -34,24 +36,26 @@ namespace BERKA.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> RegistrarCita(CitaViewModel model)
         {
-            Console.WriteLine("👉 Entré al POST RegistrarCita, ModelState: " + ModelState.IsValid);
+            Console.WriteLine("👉 Entré al POST RegistrarCita, ModelState.IsValid="
+                              + ModelState.IsValid);
 
             if (!ModelState.IsValid)
             {
-                // DEBUG: escribe errores en consola
-                foreach (var e in ModelState.Values.SelectMany(v => v.Errors))
-                    Console.WriteLine("ModelError: " + e.ErrorMessage);
-                // Recarga datos para selects
+                // imprime errores en la consola
+                foreach (var err in ModelState.Values.SelectMany(v => v.Errors))
+                    Console.WriteLine("ModelError: " + err.ErrorMessage);
+
                 ViewBag.Clientes = await _http.GetFromJsonAsync<List<Cliente>>("cliente");
                 ViewBag.Inspectores = await _http.GetFromJsonAsync<List<Inspector>>("inspector");
                 return View(model);
             }
 
             var resp = await _http.PostAsJsonAsync("cita", model);
-            Console.WriteLine("👉 API POST /api/cita: " + resp.StatusCode);
+            Console.WriteLine("👉 API POST /api/cita → " + resp.StatusCode);
+
             if (!resp.IsSuccessStatusCode)
             {
-                ModelState.AddModelError("", "Error al crear cita en API: " + resp.StatusCode);
+                ModelState.AddModelError("", "Error al crear cita en la API.");
                 ViewBag.Clientes = await _http.GetFromJsonAsync<List<Cliente>>("cliente");
                 ViewBag.Inspectores = await _http.GetFromJsonAsync<List<Inspector>>("inspector");
                 return View(model);
@@ -60,7 +64,6 @@ namespace BERKA.Web.Controllers
             TempData["mensaje"] = "¡Cita registrada con éxito!";
             return RedirectToAction(nameof(Index));
         }
-
 
         // GET: /Cita/EditarCita/{id}
         [HttpGet]
