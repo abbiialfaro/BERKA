@@ -1,102 +1,86 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using BERKA.Models;
+using BERKA.Share.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using BERKA.Models;
-using CitaApi = BERKA.Models.Cita;  
 
-namespace BERKA.Controllers
+[ApiController]
+[Route("api/[controller]")]
+public class CitaController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class CitaController : ControllerBase
+    private readonly BERKAcontext _context;
+    public CitaController(BERKAcontext context) => _context = context;
+
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<Cita>>> GetCitas()
     {
-        private readonly BERKAcontext _context;
+        // Opcionalmente incluye relaciones:
+        return await _context.Citas
+                             .Include(c => c.Cliente)
+                             .Include(c => c.Vehiculo)
+                             .Include(c => c.Inspector)
+                             .ToListAsync();
+    }
 
-        public CitaController(BERKAcontext context)
+    // POST: api/cita
+    [HttpPost]
+    public async Task<IActionResult> Post([FromBody] CitaViewModel model)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        var cita = new Cita
         {
-            _context = context;
-        }
+            Fecha = model.Fecha,
+            Hora = model.Hora,
+            Estado = model.Estado,
+            ID_Cliente = model.ID_Cliente,
+            ID_Vehiculo = model.ID_Vehiculo,
+            ID_Inspector = model.ID_Inspector
+        };
 
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<CitaApi>>> GetCita()
-        {
-            return await _context.Citas.ToListAsync();
-        }
+        _context.Citas.Add(cita);
+        await _context.SaveChangesAsync();
 
-        [HttpPost]
-        public async Task<ActionResult<Cita>> PostCliente(Cita cita)
-        {
-            _context.Citas.Add(cita);
-            await _context.SaveChangesAsync();
+        return CreatedAtAction(nameof(GetCita), new { id = cita.ID_Cita }, cita);
+    }
 
-            return CreatedAtAction("GetCita", new { id = cita.ID_Cita }, cita);
-        }
+    // PUT: api/cita/5
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Put(int id, [FromBody] CitaViewModel model)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
 
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Cita>> PostCita(CitaRequest request)
-        {
-            if (string.IsNullOrEmpty(request.Placa))
-            {
-                return BadRequest("La placa del vehículo es obligatoria.");
-            }
+        var cita = await _context.Citas.FindAsync(id);
+        if (cita == null) return NotFound();
 
-            var vehiculo = await _context.Vehiculos.FirstOrDefaultAsync(v => v.Placa == request.Placa);
-            if (vehiculo == null)
-                return BadRequest("No se encontró un vehículo con esa placa.");
+        cita.Fecha = model.Fecha;
+        cita.Hora = model.Hora;
+        cita.Estado = model.Estado;
+        cita.ID_Cliente = model.ID_Cliente;
+        cita.ID_Vehiculo = model.ID_Vehiculo;
+        cita.ID_Inspector = model.ID_Inspector;
 
-            var inspector = await _context.Inspectores.FirstOrDefaultAsync(i => i.Estado == "Activo");
-            if (inspector == null)
-                return BadRequest("No hay inspectores disponibles.");
+        await _context.SaveChangesAsync();
+        return NoContent();
+    }
 
-            var cita = new Cita
-            {
-                ID_Cliente = request.ID_Cliente,
-                Fecha = request.Fecha,
-                Hora = request.Hora,
-                Estado = request.Estado,
-                ID_Vehiculo = vehiculo.ID_Vehiculo,
-                ID_Inspector = inspector.ID_Inspector
-            };
+    // GET api/cita/5
+    [HttpGet("{id}")]
+    public async Task<ActionResult<Cita>> GetCita(int id)
+    {
+        var c = await _context.Citas.FindAsync(id);
+        return c is null ? NotFound() : Ok(c);
+    }
 
-            _context.Citas.Add(cita);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction(nameof(GetCita), new { id = cita.ID_Cita }, cita);
-        }
-
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCita(int id)
-        {
-            var cita = await _context.Citas.FindAsync(id);
-            if (cita == null)
-                return NotFound();
-
-            _context.Citas.Remove(cita);
-            await _context.SaveChangesAsync();
-            return NoContent();
-        }
-
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutCita(int id, CitaApi cita)
-        {
-            if (id != cita.ID_Cita)
-                return BadRequest();
-
-            _context.Entry(cita).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!_context.Citas.Any(e => e.ID_Cita == id))
-                    return NotFound();
-                else
-                    throw;
-            }
-
-            return NoContent();
-        }
+    // DELETE api/cita/5
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteCita(int id)
+    {
+        var cita = await _context.Citas.FindAsync(id);
+        if (cita == null) return NotFound();
+        _context.Citas.Remove(cita);
+        await _context.SaveChangesAsync();
+        return NoContent();
     }
 }

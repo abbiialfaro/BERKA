@@ -50,46 +50,69 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Cita"
+                "$ref": "#/components/schemas/CitaViewModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Cita"
+                "$ref": "#/components/schemas/CitaViewModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Cita"
+                "$ref": "#/components/schemas/CitaViewModel"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Cita"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Cita"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Cita"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
     },
     "/api/Cita/{id}": {
+      "put": {
+        "tags": [
+          "Cita"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CitaViewModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CitaViewModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CitaViewModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
       "get": {
         "tags": [
           "Cita"
@@ -100,29 +123,11 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CitaRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CitaRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/CitaRequest"
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "OK",
@@ -161,46 +166,6 @@
             }
           }
         ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "Cita"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Cita"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Cita"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Cita"
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "OK"
@@ -1924,41 +1889,24 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Vehiculo"
+                "$ref": "#/components/schemas/VehiculoViewModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Vehiculo"
+                "$ref": "#/components/schemas/VehiculoViewModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Vehiculo"
+                "$ref": "#/components/schemas/VehiculoViewModel"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Vehiculo"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Vehiculo"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Vehiculo"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -2271,10 +2219,18 @@
         },
         "additionalProperties": false
       },
-      "CitaRequest": {
+      "CitaViewModel": {
+        "required": [
+          "estado",
+          "fecha",
+          "hora",
+          "iD_Cliente",
+          "iD_Inspector",
+          "iD_Vehiculo"
+        ],
         "type": "object",
         "properties": {
-          "iD_Cliente": {
+          "iD_Cita": {
             "type": "integer",
             "format": "int32"
           },
@@ -2287,16 +2243,21 @@
             "format": "date-span"
           },
           "estado": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
           },
-          "placa": {
-            "type": "string",
-            "nullable": true
+          "iD_Cliente": {
+            "type": "integer",
+            "format": "int32"
           },
-          "categoria": {
-            "type": "string",
-            "nullable": true
+          "iD_Vehiculo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "iD_Inspector": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -2708,8 +2669,65 @@
             "type": "integer",
             "format": "int32"
           },
+          "iD_Cliente": {
+            "type": "integer",
+            "format": "int32"
+          },
           "cliente": {
             "$ref": "#/components/schemas/Cliente"
+          }
+        },
+        "additionalProperties": false
+      },
+      "VehiculoViewModel": {
+        "required": [
+          "año",
+          "categoria",
+          "color",
+          "iD_Cliente",
+          "kilometraje",
+          "marca",
+          "modelo",
+          "placa",
+          "tip_Combustible"
+        ],
+        "type": "object",
+        "properties": {
+          "marca": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "modelo": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "categoria": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "color": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "año": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "placa": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "tip_Combustible": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "kilometraje": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "iD_Cliente": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

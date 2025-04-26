@@ -1,0 +1,86 @@
+﻿@model BERKA.Share.ViewModels.CitaViewModel
+
+@{
+    ViewData["Title"] = "Registrar Cita";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var clientes = ViewBag.Clientes as List<BERKA.Models.Cliente>;
+    var inspectores = ViewBag.Inspectores as List<BERKA.Models.Inspector>;
+}
+
+<h2 class="text-success">➕ Registrar Cita</h2>
+@Html.ValidationSummary(true, "", new { @class = "text-danger mb-3" })
+
+<form action="@Url.Action("RegistrarCita","Cita")" method="post">
+    @Html.AntiForgeryToken()
+
+    <div class="mb-3">
+        <label for="Fecha">Fecha</label>
+        <input type="date" name="Fecha" id="Fecha"
+               value="@Model.Fecha.ToString("yyyy-MM-dd")"
+               class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label for="Hora">Hora</label>
+        <input type="time" name="Hora" id="Hora"
+               value="@Model.Hora" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label for="Estado">Estado</label>
+        <input type="text" name="Estado" id="Estado"
+               value="@Model.Estado" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+        <label for="ID_Cliente">Cliente</label>
+        <select name="ID_Cliente" id="ID_Cliente" class="form-control" required>
+            <option value="">--Seleccione Cliente--</option>
+            @foreach (var cli in clientes)
+            {
+                <option value="@cli.ID_Cliente">@cli.Nombre @cli.Apellido</option>
+            }
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label for="ID_Vehiculo">Vehículo</label>
+        <select name="ID_Vehiculo" id="ID_Vehiculo" class="form-control" required>
+            <option value="">--Seleccione Vehículo--</option>
+            @* Se llena dinámicamente *@
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label for="ID_Inspector">Inspector</label>
+        <select name="ID_Inspector" id="ID_Inspector" class="form-control" required>
+            <option value="">--Seleccione Inspector--</option>
+            @foreach (var insp in inspectores)
+            {
+                <option value="@insp.ID_Inspector">@insp.Nombre @insp.Apellido</option>
+            }
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-success">Guardar</button>
+</form>
+
+@section Scripts {
+    <script>
+        document.getElementById('ID_Cliente').addEventListener('change', function() {
+            var clientId = this.value;
+            var vehSel = document.getElementById('ID_Vehiculo');
+            vehSel.innerHTML = '<option value="">--Seleccione Vehículo--</option>';
+            if (!clientId) return;
+
+            fetch('@Url.Action("VehiculosPorCliente", "Cita")?id=' + clientId)
+                .then(r => r.json())
+                .then(list => {
+                    list.forEach(v => {
+                        var opt = document.createElement('option');
+                        opt.value = v.iD_Vehiculo;
+                        opt.textContent = v.placa;
+                        vehSel.appendChild(opt);
+                    });
+                });
+        });
+    </script>
+}

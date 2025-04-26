@@ -1,25 +1,28 @@
-﻿// Esta clase representa los campos del formulario para agregar una nueva cita, con validaciones
-
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace BERKA.Share.ViewModels
 {
     public class CitaViewModel
     {
+        public int ID_Cita { get; set; }
+
         [Required]
         public DateTime Fecha { get; set; }
 
         [Required]
         public TimeSpan Hora { get; set; }
 
-        [Required]
-        public string Placa { get; set; }
+        [Required, StringLength(50)]
+        public string Estado { get; set; }
 
         [Required]
-        public string Categoria { get; set; }
+        public int ID_Cliente { get; set; }
 
-        public List<string> Categorias { get; set; } = new();
+        [Required]
+        public int ID_Vehiculo { get; set; }
+
+        [Required]
+        public int ID_Inspector { get; set; }
     }
 }

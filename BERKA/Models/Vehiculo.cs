@@ -43,7 +43,10 @@ namespace BERKA.Models
         [Required]
         public int Kilometraje { get; set; }
 
-        [ForeignKey("ID_Cliente")]
+        [ForeignKey("Cliente")]
+        [Column("ID_Cliente")]    // mapea la llave foránea
+        public int ID_Cliente { get; set; }
+
         public Cliente Cliente { get; set; }
     }
 }

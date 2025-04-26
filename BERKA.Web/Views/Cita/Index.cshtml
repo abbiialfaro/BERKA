@@ -1,0 +1,61 @@
+﻿@model List<BERKA.Models.Cita>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Administrar Citas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="text-success">📅 Administrar Citas</h1>
+        <a href="@Url.Action("RegistrarCita","Cita")" class="btn btn-success">
+            ➕ Registrar Cita
+        </a>
+    </div>
+
+    @if (TempData["mensaje"] != null)
+    {
+        <div class="alert alert-success">@TempData["mensaje"]</div>
+    }
+
+    <table class="table table-hover align-middle">
+        <thead class="table-success">
+            <tr>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Estado</th>
+                <th>Cliente</th>
+                <th>Vehículo</th>
+                <th>Inspector</th>
+                <th class="text-center">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var c in Model)
+            {
+                <tr>
+                    <td>@c.Fecha.ToString("yyyy-MM-dd")</td>
+                    <td>@c.Hora</td>
+                    <td>@c.Estado</td>
+                    <td>@c.Cliente?.Nombre @c.Cliente?.Apellido</td>
+                    <td>@c.Vehiculo?.Placa</td>
+                    <td>@c.Inspector?.Nombre @c.Inspector?.Apellido</td>
+                    <td class="text-center">
+                        <a href="@Url.Action("EditarCita","Cita", new { id = c.ID_Cita })"
+                           class="btn btn-sm btn-warning me-1">
+                            ✏️
+                        </a>
+                        <form action="@Url.Action("EliminarCita","Cita", new { id = c.ID_Cita })"
+                              method="post" class="d-inline p-0 m-0">
+                            @Html.AntiForgeryToken()
+                            <button type="submit" class="btn btn-sm btn-danger"
+                                    onclick="return confirm('¿Eliminar cita?')">
+                                🗑️
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

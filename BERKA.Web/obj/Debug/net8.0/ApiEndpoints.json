@@ -1,7 +1,7 @@
 [
   {
-    "ContainingType": "BERKA.Controllers.CitaController",
-    "Method": "GetCita",
+    "ContainingType": "CitaController",
+    "Method": "GetCitas",
     "RelativePath": "api/Cita",
     "HttpMethod": "GET",
     "IsController": true,
@@ -20,81 +20,24 @@
     ]
   },
   {
-    "ContainingType": "BERKA.Controllers.CitaController",
-    "Method": "PostCliente",
+    "ContainingType": "CitaController",
+    "Method": "Post",
     "RelativePath": "api/Cita",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cita",
-        "Type": "BERKA.Models.Cita",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "BERKA.Models.Cita",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "BERKA.Controllers.CitaController",
-    "Method": "PostCita",
-    "RelativePath": "api/Cita/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "BERKA.Models.CitaRequest",
-        "IsRequired": true
-      },
-      {
-        "Name": "id",
-        "Type": "",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "BERKA.Models.Cita",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "BERKA.Controllers.CitaController",
-    "Method": "DeleteCita",
-    "RelativePath": "api/Cita/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
+        "Name": "model",
+        "Type": "BERKA.Share.ViewModels.CitaViewModel",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BERKA.Controllers.CitaController",
-    "Method": "PutCita",
+    "ContainingType": "CitaController",
+    "Method": "Put",
     "RelativePath": "api/Cita/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -106,8 +49,50 @@
         "IsRequired": true
       },
       {
-        "Name": "cita",
+        "Name": "model",
+        "Type": "BERKA.Share.ViewModels.CitaViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CitaController",
+    "Method": "GetCita",
+    "RelativePath": "api/Cita/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
         "Type": "BERKA.Models.Cita",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CitaController",
+    "Method": "DeleteCita",
+    "RelativePath": "api/Cita/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -1122,29 +1107,19 @@
   },
   {
     "ContainingType": "BERKA.Controllers.VehiculoController",
-    "Method": "PostVehiculo",
+    "Method": "Post",
     "RelativePath": "api/Vehiculo",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "vehiculo",
-        "Type": "BERKA.Models.Vehiculo",
+        "Name": "model",
+        "Type": "BERKA.Share.ViewModels.VehiculoViewModel",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "BERKA.Models.Vehiculo",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "BERKA.Controllers.VehiculoController",

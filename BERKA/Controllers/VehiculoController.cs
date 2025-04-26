@@ -1,4 +1,5 @@
 ﻿using BERKA.Models;
+using BERKA.Share.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -27,15 +28,11 @@ namespace BERKA.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Vehiculo>> GetVehiculo(int id)
         {
-            var vehiculo = await _context.Vehiculos.FindAsync(id);
-
-            if (vehiculo == null)
-            {
-                return NotFound();
-            }
-
-            return vehiculo;
+            var v = await _context.Vehiculos.FindAsync(id);
+            if (v == null) return NotFound();
+            return v;
         }
+
         [HttpGet("categorias")]
         public async Task<ActionResult<IEnumerable<string>>> GetCategorias()
         {
@@ -80,13 +77,32 @@ namespace BERKA.Controllers
 
 
         [HttpPost]
-        public async Task<ActionResult<Vehiculo>> PostVehiculo(Vehiculo vehiculo)
+        public async Task<IActionResult> Post([FromBody] VehiculoViewModel model)
         {
-            _context.Vehiculos.Add(vehiculo);
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var veh = new Vehiculo
+            {
+                Marca = model.Marca,
+                Modelo = model.Modelo,
+                Categoria = model.Categoria,
+                Color = model.Color,
+                Año = model.Año,
+                Placa = model.Placa,
+                tip_Combustible = model.Tip_Combustible,
+                Kilometraje = model.Kilometraje,
+                ID_Cliente = model.ID_Cliente
+            };
+
+            _context.Vehiculos.Add(veh);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetVehiculo", new { id = vehiculo.ID_Vehiculo }, vehiculo);
+            return CreatedAtAction(nameof(GetVehiculo), new { id = veh.ID_Vehiculo }, veh);
         }
+
+
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteVehiculo(int id)

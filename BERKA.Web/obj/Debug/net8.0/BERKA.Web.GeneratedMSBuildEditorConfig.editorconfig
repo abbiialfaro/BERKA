@@ -40,16 +40,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhckNpdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Cita/EditarCita.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0YVxFZGl0YXJDaXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Cita/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0YVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Cita/RegistrarCita.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0YVxSZWdpc3RyYXJDaXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Cliente/EditarCliente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxFZGl0YXJDbGllbnRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Cliente/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Cliente/Prueba.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxQcnVlYmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Cliente/RegistrarCliente.cshtml]
@@ -66,6 +74,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/Vehiculo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWN1bG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gabpc/source/repos/BERKA/BERKA.Web/Views/_ViewImports.cshtml]
