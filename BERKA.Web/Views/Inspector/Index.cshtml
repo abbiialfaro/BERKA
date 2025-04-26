@@ -1,0 +1,75 @@
+﻿@model List<BERKA.Models.Inspector>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Administrar Inspectores";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="text-success">🕵️ Administrar Inspectores</h1>
+        <a asp-controller="Inspector"
+           asp-action="RegistrarInspector"
+           class="btn btn-success">
+            ➕ Registrar Inspector
+        </a>
+    </div>
+
+    @if (TempData["mensaje"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["mensaje"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+        </div>
+    }
+
+    <table class="table table-hover align-middle">
+        <thead class="table-success">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Correo</th>
+                <th>Teléfono</th>
+                <th>Estación</th>
+                <th>Estado</th>
+                <th class="text-center">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var insp in Model)
+            {
+                <tr>
+                    <td>@insp.Nombre</td>
+                    <td>@insp.Apellido</td>
+                    <td>@insp.Correo</td>
+                    <td>@insp.Telefono</td>
+                    <td>@insp.Estacion</td>
+                    <td>@insp.Estado</td>
+                    <td class="text-center">
+                        <a asp-controller="Inspector"
+                           asp-action="EditarInspector"
+                           asp-route-id="@insp.ID_Inspector"
+                           class="btn btn-sm btn-warning me-1"
+                           title="Editar">
+                            <i class="bi bi-pencil-square"></i>
+                        </a>
+                        <form asp-controller="Inspector"
+                              asp-action="EliminarInspector"
+                              asp-route-id="@insp.ID_Inspector"
+                              method="post"
+                              class="d-inline p-0 m-0">
+                            @Html.AntiForgeryToken()
+                            <button type="submit"
+                                    class="btn btn-sm btn-danger"
+                                    title="Eliminar"
+                                    onclick="return confirm('¿Eliminar inspector?');">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

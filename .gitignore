@@ -1,2 +1,16 @@
 # Visual Studio temporary files
 .vs/
+
+bin/
+obj/
+Debug/
+Release/
+
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+
+*.user
+*.suo
+*.csproj.user

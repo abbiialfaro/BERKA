@@ -7,12 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BERKA.Share\BERKA.Share.csproj" />
-    <ProjectReference Include="..\BERKA\BERKA.csproj" />
+    <Compile Remove="Views\s\**" />
+    <Content Remove="Views\s\**" />
+    <EmbeddedResource Remove="Views\s\**" />
+    <None Remove="Views\s\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Inspector\" />
+    <ProjectReference Include="..\BERKA.Share\BERKA.Share.csproj" />
+    <ProjectReference Include="..\BERKA\BERKA.csproj" />
   </ItemGroup>
 
 </Project>
